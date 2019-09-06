@@ -1,319 +1,1102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dyer book | Promotion</title>
-    <!-- Font-Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style.extra.css">
+  <meta charset="utf-8">
+  <title>Rottenomics - Dyer</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #myImg:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    //background-color: rgb(f,f,f); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+    background-color: #000;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height:auto;
+    width:auto;
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-in;
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 350px;
+  }
+
+  /* Add Animation */
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    position: -webkit-sticky; /* Safari */
+    z-index: 101;
+    top: -20%;
+    right: 2%;
+    position: sticky;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 620px){
+    .modal-content {
+      height:auto;
+      width:auto;
+      width: 100%;
+    }
+  }
+  .testClass::before {
+  content: "$ ";
+}
+
+  </style>
+
 </head>
 
-<body id="home" data-spy="scroll" data-target="#mainNav" data-offset="0">
-    <!-- Body Content goes here -->
-    <!-- NavBar -->
-    <nav id="mainNav" class="navbar navbar-expand-md navbar-light fixed-top py-4">
-        <div class="container">
-            <a class="navbar-brand" href="#home"><img src="assets/img/dog.jpg" width="40" height="40" alt="Logo" class="img-fluid rounded-circle w-40 mb-3">
-                <h5 class="d-inline align-middle">Hot dog pages</h5>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#author">Meet The Author</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- NavBar -->
-    <!-- Showcase -->
-    <section id="showcase" class="py-5">
-        <div class="primary-overlay text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <h1 class="display-2 mt-5 pt-5">The story of New Zealand's leaky buildings disaster.</h1>
-                        <p class="lead">Or any other text you and information would be useful to put here.</p>
-                        <a href="#" class="btn btn-outline-secondary btn-lg text-white">
-                            <i class="fas fa-arrow-right"></i> Read More
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="assets/img/Rottenomics-cover.jpg" alt="Book" class="book-img d-none d-lg-block">
-                    </div>
-                </div>
-            </div>
+<body>
 
-        </div>
-    </section>
-    <!-- Showcase -->
-    <!-- Newsletter -->
-    <section id="newsletter" class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <input type="text" class="mb-resp form-control form-control-lg" placeholder="Enter Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="mb-resp form-control form-control-lg" placeholder="Enter Email">
-                </div>
-                <div class="col-md-4">
-                    <button class="mb-resp btn btn-primary btn-lg btn-block">
-                        <i class="far fa-envelope-open"></i> Subscribe
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Newsletter -->
-    <!-- Comment Boxes -->
-    <section id="boxes" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card text-center border-primary mb-resp">
-                        <div class="card-body">
-                            <h3 class="text-primary">Something</h3>
-                            <p class="muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, aperiam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center bg-primary text-white mb-resp">
-                        <div class="card-body">
-                            <h3>Something else</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, aperiam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center border-primary mb-resp">
-                        <div class="card-body">
-                            <h3 class="text-primary">More options</h3>
-                            <p class="muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, aperiam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center bg-primary text-white mb-resp">
-                        <div class="card-body">
-                            <h3>Even more</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, aperiam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Comment Boxes -->
-    <!-- About -->
-    <section id="about" class="text-center py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="info-header mb-5">
-                        <h1 class="text-primary pb-3">Why This Book</h1>
-                        <p class="lead pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque beatae, a
-                            illum iure corrupti sequi?</p>
-                    </div>
-                    <!-- Accordion -->
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="mb-0">
-                                    <div href="#collapse1" data-toggle="collapse" data-parent="#accordion"><i class="fas fa-arrow-circle-down"></i>
-                                        Learn more</div>
-                                </h5>
-                            </div>
-                            <div id="collapse1" class="collapse show">
-                                <div class="card-body">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repudiandae nobis,
-                                    nemo doloremque porro aperiam autem voluptate unde obcaecati ducimus deleniti,
-                                    deserunt officiis eaque in quaerat fugiat magni aspernatur quidem. Magni, sint
-                                    impedit aliquid necessitatibus fugit officiis enim, vitae aut ducimus corrupti
-                                    quibusdam! Nemo sequi laudantium magni accusamus? Ab, nam!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="mb-0">
-                                    <div href="#collapse2" data-toggle="collapse" data-parent="#accordion"><i class="fas fa-arrow-circle-down"></i>
-                                        See additional resources</div>
-                                </h5>
-                            </div>
-                            <div id="collapse2" class="collapse">
-                                <div class="card-body">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repudiandae nobis,
-                                    nemo doloremque porro aperiam autem voluptate unde obcaecati ducimus deleniti,
-                                    deserunt officiis eaque in quaerat fugiat magni aspernatur quidem. Magni, sint
-                                    impedit aliquid necessitatibus fugit officiis enim, vitae aut ducimus corrupti
-                                    quibusdam! Nemo sequi laudantium magni accusamus? Ab, nam!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="mb-0">
-                                    <div href="#collapse3" data-toggle="collapse" data-parent="#accordion"><i class="fas fa-arrow-circle-down"></i>
-                                        anything else</div>
-                                </h5>
-                            </div>
-                            <div id="collapse3" class="collapse">
-                                <div class="card-body">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repudiandae nobis,
-                                    nemo doloremque porro aperiam autem voluptate unde obcaecati ducimus deleniti,
-                                    deserunt officiis eaque in quaerat fugiat magni aspernatur quidem. Magni, sint
-                                    impedit aliquid necessitatibus fugit officiis enim, vitae aut ducimus corrupti
-                                    quibusdam! Nemo sequi laudantium magni accusamus? Ab, nam!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Accordion -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About -->
-    <!-- Author -->
-    <section id="author" class="my-5 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="info-header mb-5">
-                        <h1 class="text-primary pb-3">Meet The Author</h1>
-                        <p class="lead pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque beatae, a
-                            illum iure corrupti sequi?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
 
-                        <div class="card-body">
-                            <img src="assets/img/PDyer-2.jpg" alt="Author1" class="img-fluid rounded-circle w-30 mb-3">
-                            <h3>Peter Dyer</h3>
-                            <h5>Author, researcher, musician</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat aliquam tenetur
-                                esse, libero quis?</p>
-                            <div class="d-flex justify-content-center">
-                                <div class="p-4">
-                                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                </div>
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">Rottenomics</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About the author</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="#chapters">Chapters</a></li>
+          <li><a href="#OtherDocs">Other documents</a></li>
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/intro-carousel/3.jpg" height= "60%" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Rottenomics - the story of New Zealand's leaky buildings. and a lot of other text just to see what happens</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#facts" class="btn-get-started scrollto">Facts and figuares</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>At vero eos et accusamus</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+                <a href="#facts" class="btn-get-started scrollto">Facts and figuares</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Temporibus autem quibusdam</h2>
+                <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+                <a href="#facts" class="btn-get-started scrollto">Facts and figuares</a>
+              </div>
+            </div>
+          </div>
 
 
-                </div>
-            </div>
         </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-waterdrop"></i>
+            <h4 class="title"><a href="">Lorem Ipsum Delino</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-umbrella"></i>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-cash"></i>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      Services Section
+    ============================
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section> #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Call To Action</h3>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="cta-btn" href="#">Call To Action</a>
+      </div>
+    </section> #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Skills</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">HTML <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">CSS <i class="val">90%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
-    <!-- Author -->
-    <!-- Contact -->
-    <section id="contact" class="bg-light-py-5 mb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <h3>Get In Touch</h3>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, magni.</p>
-                    <form>
-                        <div class="input-group input-group-lg mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="input-group input-group-lg mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="fas fa-at"></i>
-                                </span>
-                            </div>
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="input-group input-group-lg mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="fas fa-comment-alt"></i>
-                                </span>
-                            </div>
-                            <textarea class="form-control" placeholder="Enter Your Message" rows="5"></textarea>
-                        </div>
-                        <input type="submit" value="Submit Your Message" class="btn btn-primary btn-block btn-lg">
-                    </form>
-                </div>
-                <div class="col-lg-3 align-self-center">
-                    <img class="img-fluid rounded-circle w-250 mb-3" src="assets/img/PDyer-1.jpg" alt="">
-                </div>
-            </div>
+-->
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Facts</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>
+
+        <div class="row counters">
+
+  				<div class="col-lg-4 col-6 text-center">
+            <span data-toggle="counter-up">274</span>
+            <p>Leaky buildings</p>
+  				</div>
+
+          <div class="col-lg-4 col-6 text-center">
+            <span class="testClass" data-toggle="counter-up">421</span>
+            <p>Billion, and counting</p>
+  				</div>
+
+          <div class="col-lg-4 col-6 text-center">
+            <span data-toggle="counter-up">1,364</span>
+            <p>other facts?</p>
+  				</div>
+<!--
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>yet more facts</p>
+  				</div>
+
+  			</div>
+-->
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      OtherDocs Section
+    ============================-->
+    <section id="OtherDocs">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Other documents</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
+        <div class="facts-img">
+          <a href="additional documents/document-1.pdf"><img src="img/declassified-document-1500x1123.jpg" alt="" class="OtherDocs-img" center></a>
+        </div>
+      </div>
     </section>
-    <!-- Contact -->
-    <!-- Footer -->
-    <footer id="footer" class="bg-primary text-white py-5">
-        <div class="row text-center">
-            <div class="col text-center">
-                <p class="lead">Copyright &copy; <span id="year"></span></p>
-                <p class="lead">Cizadlo pages</i></p>
-            </div>
+<!-- #OtherDocs -->
+
+
+<!-- The Modal -->
+<div id="modalContainer"><div id="myModal" class="modal">
+  <span class="close">X</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></div>
+
+
+    <!--==========================
+      chapters Section
+    ============================-->
+    <section id="chapters"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Rottenomics Chapters</h3>
+        </header>
+
+<!-- filtering
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="chapters-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
         </div>
-    </footer>
-    <!-- Footer -->
-    <!-- Body Content goes here -->
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!-- Popper JS CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <script>
-        // Dynamic Year
-        $("#year").text(new Date().getFullYear());
-        // Scrollspy
-        $('body').scrollspy({ target: '#mainNav' });
-        // Smooth Scroll
-        $('#mainNav a').on('click', function (e) {
-        if (this.hash !== '') {
-            e.preventDefault();
-            const hash = this.hash;
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top
-            }, 900, function () {
-            window.location.hash = hash;
-            });
-        }
-        });
-    </script>
+-->
+        <!-- <span class="chapterStyle" id='testDiv' style="position: relative; height: 1080px;"> -->
+        <div class="row portfgoflio-container" style="position: relative; " id='testDiv'>
+
+
+
+<!--
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+-->
+</div>
+
+
+
+
+      </div>
+    </section><!-- #chapters -->
+
+    <!--==========================
+      Clients Section
+    ============================
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+          <img src="img/clients/client-2.png" alt="">
+          <img src="img/clients/client-3.png" alt="">
+          <img src="img/clients/client-4.png" alt="">
+          <img src="img/clients/client-5.png" alt="">
+          <img src="img/clients/client-6.png" alt="">
+          <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section> #clients -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Reviews</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="img/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="img/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="img/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> #team -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="my-5 text-center">>
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About the Author</h3>
+
+          <div class="card-body">
+              <img src="img/PDyer-2.jpg" alt="Author1" class="img-fluid rounded-circle w-30 mb-3">
+              <h3>Peter Dyer</h3>
+              <h5>Author, researcher, musician</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat aliquam tenetur
+                  esse, libero quis?</p>
+              <div class="d-flex justify-content-center">
+                  <div class="p-4">
+                      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="p-4">
+                      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="p-4">
+                      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+            </div>
+
+
+<!--
+          <p>Peter Dyer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-12 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/PDyer-2.jpg" alt="" class="img-fluid">
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+-->
+      </div>
+    </section> <!-- #about -->
+
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact the author</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Rottenomics</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">About the author</a></li>
+              <li><a href="#chapters">Chapters</a></li>
+              <li><a href="#OtherDocs">Other documents</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Contact</a></li>
+              <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li> -->
+              <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Rottenomics</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        -->
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
+<script>
+$(document).ready(function() {
+    document.getElementById("testDiv").innerHTML = displayChapters();
+
+  });
+
+var bookData = {
+  1: {
+    title: "Title of Chapter one",
+    numberOfImages: 1,
+    captions: ["caption for image one chapter 1"]
+  },
+  2: {
+    title: "Title of Chapter 2",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  3: {
+    title: "Title of Chapter three",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  4: {
+    title: "Title of Chapter four",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  5: {
+    title: "Title of Chapter V",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  6: {
+    title: "Title of Chapter 6",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  7: {
+    title: "Title of Chapter 7",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  8: {
+    title: "Title of Chapter eight",
+    numberOfImages: 3,
+    captions: ["caption for image one", "caption for image 2", "caption for image III"]
+  },
+  9: {
+    title: "Title of Chapter nine",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  10: {
+    title: "Title of Chapter ten",
+    numberOfImages: 4,
+    captions: ["caption for image one", "caption for image 2", "caption for image III", "caption for image four"]
+  },
+  11: {
+    title: "Title of Chapter 11",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  12: {
+    title: "Title of Chapter 12",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  13: {
+    title: "Title of Chapter 13",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  14: {
+    title: "Title of Chapter 14",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  15: {
+    title: "Title of Chapter 15",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  16: {
+    title: "Title of Chapter 16",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  17: {
+    title: "Title of Chapter 17",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  18: {
+    title: "Title of Chapter 18",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  19: {
+    title: "Title of Chapter 19",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  },
+  20: {
+    title: "Title of Chapter 20",
+    numberOfImages: 1,
+    captions: ["caption for image one"]
+  }
+}
+function displayChapters() {
+
+
+  var chapterHTML = "";
+  for (i = 1; i < 21; i++){
+    if((i % 4) == 1) chapterHTML += '<div class="col-lg-3 col-md-6 portfolio-item">';
+    else if ((i % 4) == 2) chapterHTML += '<div class="col-lg-3 col-md-6 portfolio-item">';
+    else if ((i % 4) == 3) chapterHTML += '<div class="col-lg-3 col-md-6 portfolio-item">';
+    else if ((i % 4) == 0) chapterHTML += '<div class="col-lg-3 col-md-6 portfolio-item">'
+    chapterHTML += '  <div class="portfolio-wrap">';
+    chapterHTML += '      <h4 style="text-align: center;">Chapter ' + i + '</h4>';
+    chapterHTML += '    <figure class="frame">';
+    if(bookData[i].numberOfImages>1){
+        chapterHTML += '    <div class="grid-multi">';
+      for(j = 1;j<=bookData[i].numberOfImages;j++){
+        chapterHTML += '    <a href="javascript:ShowMyModal(\'img/chapter ' + i + '/Chapter ' + i + '-' + j + '.jpg\',' + i + ', ' + j + ');"> <img src="img/chapter ' + i + '/Chapter ' + i + '-'+ j + '.jpg" class="image-chapter-multi" alt="Chapter' + i + ' Image-' + j + '"></a>';
+      }
+        chapterHTML += '    </div>';
+    } else {
+      chapterHTML += '    <div class="grid">';
+      chapterHTML += '    <a href="javascript:ShowMyModal(\'img/chapter ' + i + '/Chapter ' + i + '.jpg\',' + i + ', ' + 1 + ');"> <img src="img/chapter ' + i + '/Chapter ' + i + '.jpg" class="image-chapter" alt="Chapter' + i + ' Image"></a>';
+      chapterHTML += '    </div>';
+    }
+    chapterHTML += '    </figure>';
+    chapterHTML += '    <div class="portfolio-info">';
+
+    chapterHTML += '      <p style="text-align: center;">' + bookData[i].title + '</p>';
+    chapterHTML += '    </div>';
+    chapterHTML += '  </div>';
+    chapterHTML += '  </div>';
+  }
+  return chapterHTML;
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var lastScrollPosition = 0;
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
+    modalImg.style.maxHeight = "90%";
+    modalImg.style.maxWidth = "90%";
+    modalImg.style.cursor= "zoom-in";
+  }
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+      if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
+        modalImg.style.maxHeight = "90%";
+        modalImg.style.maxWidth = "90%";
+        modalImg.style.cursor= "zoom-in";
+      }
+
+  }
+}
+modalImg.onclick = function(event) {
+  //console.log((event.clientX - modalImg.offsetLeft) + ", " + (event.clientY - modalImg.offsetTop));
+    if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
+      modalImg.style.maxHeight = "90%";
+      modalImg.style.maxWidth = "90%";
+      modalImg.style.cursor= "zoom-in";
+      myModal.scrollTop = lastScrollPosition;
+      //element.style.transform = "translate(0%, 0%)";
+    } else {
+      lastScrollPosition = myModal.scrollTop;
+      console.log(myModal.scrollTop);
+      var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
+      var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
+      //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+      modalImg.style.maxHeight = modalImg.naturalHeight+'px';
+      modalImg.style.maxWidth = modalImg.naturalWidth+'px';
+      //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+      myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
+      modalImg.style.cursor= "zoom-out";
+    }
+}
+
+function ShowMyModal(imageSRC, chapter, imgNum){
+  // code to show modal + caption here
+  console.log(bookData[chapter].captions);
+  modal.style.display = "block";
+  modalImg.src = imageSRC;
+  console.log(modal.screenTop + " x " + modal.screenY);
+  captionText.innerHTML = bookData[chapter].captions[imgNum-1];
+}
+
+</script>
 
 </html>
