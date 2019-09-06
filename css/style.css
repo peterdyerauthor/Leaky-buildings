@@ -942,6 +942,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
+  text-align: center;
 }
 
 #portfolio .portfolio-wrap:hover {
@@ -1611,6 +1612,7 @@ width: 260px;
 height: 240px;
 //border: 2px solid #ccc;
 //background: #333;
+
 }
 
 .grid {
@@ -1619,20 +1621,25 @@ height: 240px;
   justify-items: center;
   }
 .grid-multi {
+  //display: block;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 120px 120px;
   grid-gap: 10px;
-  align-items: stretch;
-  justify-items: center;
+  //align-items: stretch;
+  //justify-items: center;
   }
 
 .grid img {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
+  text-align: center;
 }
 .grid-multi img {
+  //align-items: stretch;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
+  text-align: center;
 }
