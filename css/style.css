@@ -1599,14 +1599,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   height:auto;
   width:auto;
   padding: 5%;
-  background-image: url("../img/wood-frame-tiny.jpg");
+  background-image: url("../img/wood-frame-new.jpg");
 }
+.image-chapter:hover {opacity: .8;}
+
 .image-chapter-multi {
   max-height: 120px;
   max-width: 120px;
   padding: 5%;
-  background-image: url("../img/wood-frame-tiny.jpg");
+  background-image: url("../img/wood-frame-new.jpg");
 }
+.image-chapter-multi:hover {opacity: .8;}
 .frame {
 width: 260px;
 height: 240px;
