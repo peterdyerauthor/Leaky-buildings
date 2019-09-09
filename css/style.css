@@ -1,4 +1,4 @@
-/*
+// transition:/*
   Theme Name: BizPage
   Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
   Author: BootstrapMade.com
@@ -1599,13 +1599,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   height:auto;
   width:auto;
   padding: 5%;
-  background-image: url("../img/wood-frame.jpg");
+  background-image: url("../img/wood-frame-tiny.jpg");
 }
 .image-chapter-multi {
   max-height: 120px;
   max-width: 120px;
   padding: 5%;
-  background-image: url("../img/wood-frame.jpg");
+  background-image: url("../img/wood-frame-tiny.jpg");
 }
 .frame {
 width: 260px;
