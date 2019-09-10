@@ -132,8 +132,11 @@
       width: 100%;
     }
   }
-  .testClass::before {
-  content: "$ ";
+  .dollarClass::before {
+  content: "$";
+}
+.percentClass::after {
+content: "%";
 }
 figure {
   display: block;
@@ -166,7 +169,7 @@ figure {
           <li><a href="#about">About the author</a></li>
           <!-- <li><a href="#services">Services</a></li> -->
           <li><a href="#chapters">Chapters</a></li>
-          <li><a href="#OtherDocs">Other documents</a></li>
+          <li><a href="#OtherDocs">Documents</a></li>
           <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -196,8 +199,9 @@ figure {
             <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Rottenomics - the story of New Zealand's leaky buildings disaster.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h2>Rottenomics - The Story of New Zealand's Leaky Buildings Disaster.</h2>
+                <p>The scale of the massive leaky buildings disaster is unprecedented. It is arguably the most extravagant waste of human and financial resources in New Zealand history. How could we have allowed this to happen? And why, a quarter century after these buildings first appeared, are we still building them? Rottenomics is the first attempt to provide comprehensive, evidence-based answers to these questions.
+</p>
                 <a href="#facts" class="btn-get-started scrollto">Facts and figuares</a>
               </div>
             </div>
@@ -337,33 +341,32 @@ figure {
 
         <header class="section-header">
           <h3>Facts</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p>The figures are staggering.</p>
         </header>
 
         <div class="row counters">
 
-  				<div class="col-lg-4 col-6 text-center">
-            <span data-toggle="counter-up">274</span>
-            <p>Leaky buildings</p>
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">174,000</span>
+            <p>Leaky dwellings</p>
   				</div>
 
-          <div class="col-lg-4 col-6 text-center">
-            <span class="testClass" data-toggle="counter-up">421</span>
-            <p>Billion, and counting</p>
-  				</div>
-
-          <div class="col-lg-4 col-6 text-center">
-            <span data-toggle="counter-up">1,364</span>
-            <p>other facts?</p>
-  				</div>
-<!--
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">18</span>
-            <p>yet more facts</p>
+            <span class="dollarClass" data-toggle="counter-up">47.709</span>
+            <p>Billion estimated costs</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span class="percentClass" data-toggle="counter-up">20.5</span>
+            <p>Estimated cost leaky dwellings/GDP (2014)</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">25</span>
+            <p>years Since the first reports of leaky buildings</p>
   				</div>
 
   			</div>
--->
       </div>
     </section><!-- #facts -->
 
@@ -373,13 +376,25 @@ figure {
     <section id="OtherDocs">
       <div class="container">
         <div class="section-header wow fadeInUp">
-          <h3>Other documents</h3>
+          <h3>Documents</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
-        <div class="facts-img">
-          <a href="additional documents/document-1.pdf"><img src="img/declassified-document-1500x1123.jpg" alt="" class="OtherDocs-img" center></a>
+        <div class="row">
+        <div class="col-md-6">
+          <div>
+            <a href="additional documents/document-1.pdf"><img src="img/PWC-leaky-homes-report-cover.jpg" alt="" class="OtherDocs-img" center></a>
+          </div>
+          <p  style="text-align: center;">Weathertightness—estimating the cost. PriceWaterhouseCoopers 2009.</p>
+        </div>
+          <div class="col-md-6">
+          <div>
+            <a href="additional documents/document-1.pdf"><img src="img/declassified-document-1500x1123.jpg" alt="" class="OtherDocs-img" center></a>
+          </div>
+          <p style="text-align: center;">Other document caption</p>
+        </div>
         </div>
       </div>
+
     </section>
 <!-- #OtherDocs -->
 
@@ -770,7 +785,7 @@ figure {
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">About the author</a></li>
               <li><a href="#chapters">Chapters</a></li>
-              <li><a href="#OtherDocs">Other documents</a></li>
+              <li><a href="#OtherDocs">Documents</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Contact</a></li>
               <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li> -->
               <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li> -->
