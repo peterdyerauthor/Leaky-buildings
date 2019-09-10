@@ -907,7 +907,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 70%;
   border: 1px solid #d0d0d0;
 }
-
+  #OtherDocs .OtherDocs-img:hover {opacity: 0.7;}
 /* Portfolio Section
 --------------------------------*/
 
