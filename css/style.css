@@ -644,7 +644,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/Mold-and-Mildew.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -857,7 +857,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #facts {
-  background: url("../img/rust.jpg") center top no-repeat fixed;
+  background: url("../img/Mold-and-Mildew.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
@@ -899,13 +899,32 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #OtherDocs {
-   padding: 60px 0;
+  background: url("../img/Mold-and-Mildew.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
 }
+#OtherDocs::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.78);
+  z-index: 9;
+}
+#OtherDocs .container {
+  position: relative;
+  z-index: 10;
+}
+
 #OtherDocs .OtherDocs-img {
   text-align: center;
   padding: 5px;
   width: 70%;
   border: 1px solid #d0d0d0;
+  z-index: 2;
 }
   #OtherDocs .OtherDocs-img:hover {opacity: 0.7;}
 /* Portfolio Section
@@ -1330,7 +1349,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team {
   background: #fff;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 #team .member {
