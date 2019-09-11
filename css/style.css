@@ -1845,7 +1845,7 @@ height: 240px;
 }
 
 #new-intro p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -1883,7 +1883,7 @@ height: 240px;
 }
 .paragraph-text {
     position: relative;
-    padding-top: 5vh;
+    padding-top: 4vh;
   color: #fff;
 }
 .book-cover {
