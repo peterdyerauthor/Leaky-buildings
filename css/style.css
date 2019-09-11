@@ -225,12 +225,15 @@ h6 {
 
 #intro .carousel-content {
   text-align: center;
+  padding-top: 10%;
 }
 
 #intro h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 250%;
   font-weight: 700;
 }
 
@@ -1825,4 +1828,70 @@ height: 240px;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
   text-align: center;
+}
+
+#new-intro {
+  //display: table;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#444444, #000000);
+  //z-index: 1;
+}
+#new-intro h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 7%;
+  margin-right: 7%;
+}
+
+#new-intro p {
+  font-size: 0.8rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#new-intro .btn-get-started {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  padding: 4px 7px;
+  border-radius: 30%;
+  transition: 0.5s;
+  //margin: 10px;
+  color: #fff;
+  background: #18d26e;
+}
+
+#new-intro .btn-get-started:hover {
+  background: #fff;
+  color: #18d26e;
+}
+#new-intro .intro-content {
+  text-align: center;
+  padding-top: 25vh;
+  width: 100%
+}
+
+.head-text {
+  position: absolute;
+  color: #fff;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.paragraph-text {
+    position: relative;
+    padding-top: 5vh;
+  color: #fff;
+}
+.book-cover {
+  height: 80vh;
+  opacity: .5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -45%);
 }
