@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rottenomics Photo Gallery</title>
+    <style>
+      .title_txt{
+        text-align: center;
+      }
+      .title_bar{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-auto-rows:10vh;
+      }
+      .wrapper_wrapper{
+        display:grid;
+        grid-template-columns:1fr 10fr 1fr;
+        //grid-auto-rows:80vh;
+      }
+      .wrapper{
+        display:grid;
+        //grid-template-columns:1fr 1fr 1fr;
+        grid-template-columns:repeat(8, 126px);
+        grid-template-rows:repeat(8, 126px);
+        grid-gap:3px;
+      }
+      .wrapper > div{
+        background:#eee;
+        //text-align: center;
+        //padding:3px;
+        //border: 1px #000 solid;
+        padding: 10% 0;
+      }
+      .pic0 {
+        border: 2px #f00 solid;
+        text-align: center;
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body  onload="whenPageLoaded()">
+    <div class="title_bar"><h1 class="title_txt">Title text</h1></div>
+    <div class="wrapper_wrapper">
+      <div></div>
+      <div class="wrapper" id="galleryArea">
+<!-- IMAGE GALLERY -->
+      </div>
+    </div>
+    <script>
+  function whenPageLoaded() {
+    document.getElementById("galleryArea").innerHTML = buildGallery();
+  }
+  var galleryHTML = "";
+
+  function buildGallery(){
+    console.log(items.length);
+        for (i = 0; i < items.length; i++){
+          console.log(items[i].src + ", " + items[i].msrc);
+        galleryHTML += '<div class=pic' + i + '><a href="' + items[i].src + '"><img src="' + items[i].msrc  + '"" alt="" width=100%></a></div>';
+        //galleryHTML += '<div>picture ' + i + '</div>';
+      }
+      return galleryHTML;
+    }
+      var items = [
+        {
+          src: 'gallery_imgs/resized_0.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_0.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_1.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_1.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_2.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_2.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_3.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_3.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_4.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_4.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_5.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_5.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_6.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_6.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_7.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_7.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_8.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_8.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_9.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_9.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_10.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_10.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_11.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_11.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_12.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_12.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_13.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_13.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_14.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_14.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_15.jpg',
+          w: 1000,
+          h: 750,
+          msrc: 'gallery_imgs/thumbnail_15.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_16.jpg',
+          w: 1000,
+          h: 667,
+          msrc: 'gallery_imgs/thumbnail_16.jpg',
+          title: 'Image Caption'
+          },
+          {
+          src: 'gallery_imgs/resized_17.jpg',
+          w: 1000,
+          h: 667,
+          msrc: 'gallery_imgs/thumbnail_17.jpg',
+          title: 'Image Caption'
+          }
+    ];
+    </script>
+
+  </body>
+
+</html>

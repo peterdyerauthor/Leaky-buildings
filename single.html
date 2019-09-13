@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rottenomics Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/galleryCSS/bootstrap.min.css">
+    <link rel="stylesheet" href="css/galleryCSS/magnific-popup.css">
+    <link rel="stylesheet" href="css/galleryCSS/jquery-ui.css">
+    <link rel="stylesheet" href="css/galleryCSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/galleryCSS/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/galleryCSS/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/galleryCSS/aos.css">
+    <link rel="stylesheet" href="css/galleryCSS/fancybox.min.css">
+
+    <link rel="stylesheet" href="css/galleryCSS/style.css">
+
+  </head>
+  <body onload="whenPageLoaded()">
+
+
+  <div class="site-wrap">
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="header-bar d-flex d-lg-block align-items-center">
+    <div class="site-logo">
+      <a href="index.html">Rottenomics</a>
+    </div>
+
+    <div class="d-inline-block d-xl-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+    <div class="main-menu">
+      <ul class="js-clone-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="photos.html">Photos</a></li>
+        <li><a href="index.html#team">Bio</a></li>
+        <li><a href="index.html#chapters">Chapters</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <ul class="social js-clone-nav">
+        <li><a href="#"><span class="icon-facebook"></span></a></li>
+        <li><a href="#"><span class="icon-twitter"></span></a></li>
+        <li><a href="#"><span class="icon-instagram"></span></a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="container-fluid photos">
+
+      <div class="row pt-4 mb-5 text-center">
+        <div class="col-12">
+          <h2 class="text-white mb-4">Rottenomics Gallery</h2>
+        </div>
+      </div>
+
+      <div class="row align-items-stretch" id="galleryArea">
+
+      </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center py-5">
+          <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div> <!-- .site-wrap -->
+
+  <script src="js/galleryJS/jquery-3.3.1.min.js"></script>
+  <script src="js/galleryJS/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/galleryJS/jquery-ui.js"></script>
+  <script src="js/galleryJS/popper.min.js"></script>
+  <script src="js/galleryJS/bootstrap.min.js"></script>
+  <script src="js/galleryJS/owl.carousel.min.js"></script>
+  <script src="js/galleryJS/jquery.stellar.min.js"></script>
+  <script src="js/galleryJS/jquery.countdown.min.js"></script>
+  <script src="js/galleryJS/jquery.magnific-popup.min.js"></script>
+  <script src="js/galleryJS/bootstrap-datepicker.min.js"></script>
+  <script src="js/galleryJS/aos.js"></script>
+
+  <script src="js/galleryJS/jquery.fancybox.min.js"></script>
+
+  <script src="js/galleryJS/main.js"></script>
+
+<script>
+var galleryHTML = "";
+function whenPageLoaded() {
+  document.getElementById("galleryArea").innerHTML = img_gallery_tile();
+}
+
+function img_gallery_tile(){
+    //console.log(items.length);
+        for (i = 0; i < items.length; i++){
+        //console.log(items[i].src + ", " + items[i].msrc);
+        galleryHTML +='          <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">';
+        galleryHTML +='            <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML += '             <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '             <div class="photo-text-more">';
+        galleryHTML += '               <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML += '               <span class="icon icon-search"></span>';
+        galleryHTML += '             </div>';
+        galleryHTML += '           </a>';
+        galleryHTML += '         </div>';
+        if(i==items.length)break;
+        galleryHTML += '<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">';
+        galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML +='      <span class="icon icon-search"></span>';
+        galleryHTML +='    </div>';
+        galleryHTML +='  </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">';
+        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML +='      <span class="icon icon-search"></span>';
+        galleryHTML +='    </div>';
+        galleryHTML +='  </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-8" data-aos="fade-up">';
+        galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML +='      <span class="icon icon-search"></span>';
+        galleryHTML +='    </div>';
+        galleryHTML +='  </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">';
+        galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML +='      <span class="icon icon-search"></span>';
+        galleryHTML +='    </div>';
+        galleryHTML +='  </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up">';
+        galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML +='      <span class="icon icon-search"></span>';
+        galleryHTML +='    </div>';
+        galleryHTML +='  </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">';
+        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML += '     <span class="icon icon-search"></span>';
+        galleryHTML +='    </div>';
+        galleryHTML +='  </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">';
+        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML += '     <span class="icon icon-search"></span>';
+        galleryHTML += '   </div>';
+        galleryHTML += ' </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">';
+        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML += '     <span class="icon icon-search"></span>';
+        galleryHTML += '   </div>';
+        galleryHTML += ' </a>';
+        galleryHTML +='</div>';
+        if(i==items.length)break;
+        galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">';
+        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
+        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <div class="photo-text-more">';
+        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML += '     <span class="icon icon-search"></span>';
+        galleryHTML += '    </div>';
+        galleryHTML += ' </a>';
+        galleryHTML +='</div>';
+
+      }
+      return galleryHTML;
+    }
+    var items = [
+      {
+        src: 'gallery1/resized_0.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_0.jpg',
+        title: 'Peter Kim and Jack'
+        },
+        {
+        src: 'gallery1/resized_1.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_1.jpg',
+        title: 'House concert'
+        },
+        {
+        src: 'gallery1/resized_2.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_2.jpg',
+        title: 'Peter concentrating on a lick'
+        },
+        {
+        src: 'gallery1/resized_3.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_3.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_4.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_4.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_5.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_5.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_6.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_6.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_7.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_7.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_8.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_8.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_9.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_9.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_10.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_10.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_11.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_11.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_12.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_12.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_13.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_13.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_14.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_14.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_15.jpg',
+        w: 1000,
+        h: 750,
+        msrc: 'gallery1/thumbnail_15.jpg',
+        title: 'Image Caption'
+        },
+        {
+        src: 'gallery1/resized_16.jpg',
+        w: 1000,
+        h: 667,
+        msrc: 'gallery1/thumbnail_16.jpg',
+        title: 'Ted at Bernard\'s 60th'
+        },
+        {
+        src: 'gallery1/resized_17.jpg',
+        w: 1000,
+        h: 667,
+        msrc: 'gallery1/thumbnail_17.jpg',
+        title: 'Ted concentrating'
+        }
+  ];
+
+</script>
+
+
+  </body>
+</html>

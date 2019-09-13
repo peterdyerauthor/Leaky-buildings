@@ -1838,14 +1838,14 @@ height: 240px;
   //z-index: 1;
 }
 #new-intro h2 {
-  font-size: 2rem;
+  font-size: 20hv;
   font-weight: 700;
   padding-left: 7%;
   margin-right: 7%;
 }
 
 #new-intro p {
-  font-size: 0.9rem;
+  font-size: 10hv;
   padding-left: 10%;
   padding-right: 10%;
 }
