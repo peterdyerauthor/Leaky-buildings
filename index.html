@@ -743,8 +743,8 @@ var bookData = {
   },
   2: {
     title: "Blamefest",
-    numberOfImages: 1,
-    captions: ["caption for image one"]
+    numberOfImages: 2,
+    captions: ["caption for image one", "caption for image two"]
   },
   3: {
     title: "Timber treatment: the fight and the resolution",
@@ -758,8 +758,8 @@ var bookData = {
   },
   5: {
     title: "Monolithic design and materials",
-    numberOfImages: 1,
-    captions: ["caption for image one"]
+    numberOfImages: 4,
+    captions: ["caption for image one", "caption for image 2", "caption for image 3", "caption for image 4"]
   },
   6: {
     title: "Building controls: discontent, research, reports and a solution",
@@ -773,18 +773,18 @@ var bookData = {
   },
   8: {
     title: "At the coalface",
-    numberOfImages: 3,
-    captions: ["caption for image one", "caption for image 2", "caption for image III"]
-  },
-  9: {
-    title: "Milton and Jean Pedley: stranger than fiction",
     numberOfImages: 1,
     captions: ["caption for image one"]
   },
+  9: {
+    title: "Milton and Jean Pedley: stranger than fiction",
+    numberOfImages: 2,
+    captions: ["caption for image one", "caption for image 2"]
+  },
   10: {
     title: "Lost training, lost skills",
-    numberOfImages: 4,
-    captions: ["caption for image one", "caption for image 2", "caption for image III", "caption for image four"]
+    numberOfImages: 2,
+    captions: ["caption for image one", "caption for image 2"]
   },
   11: {
     title: "Private building certifiers: set up to fail",
@@ -813,8 +813,8 @@ var bookData = {
   },
   16: {
     title: "Building Performance Guarantee Act repeal",
-    numberOfImages: 1,
-    captions: ["caption for image one"]
+    numberOfImages: 2,
+    captions: ["caption for image one", "caption for image 2"]
   },
   17: {
     title: "Local Government Amendment Acts 1989",
@@ -856,7 +856,7 @@ function displayChapters() {
       }
         chapterHTML += '    </div>';
     } else {
-      chapterHTML += '    <div class="grid">';
+      chapterHTML += '    <div class="chapter-grid">';
       chapterHTML += '    <a href="javascript:ShowMyModal(\'img/Chapter-' + i + '/Chapter-' + i + '.jpg\',' + i + ', ' + 1 + ');"> <img src="img/Chapter-' + i + '/Chapter-' + i + '.jpg" class="image-chapter" alt="Chapter ' + i + ' Image"></a>';
       chapterHTML += '    </div>';
     }
