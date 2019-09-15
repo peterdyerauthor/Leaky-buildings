@@ -639,8 +639,6 @@ figure {
               <li><a href="#chapters">Chapters</a></li>
               <li><a href="#OtherDocs">Documents</a></li>
               <li><a href="single.html">Image Gallery</a></li> -->
-
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Contact</a></li>
               <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li> -->
               <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li> -->
             </ul>
@@ -899,36 +897,66 @@ window.onclick = function(event) {
 
   }
 }
+var zoom_factor = 100;
 
+window.onkeydown=function(e){
+
+    if (e.which = 16){
+      //console.log("down " + e.which);
+      modalImg.style.cursor="zoom-out";
+    }
+}
+window.onkeyup=function(e){
+
+    if (e.which = 16){
+      //console.log("up " + e.which);
+      modalImg.style.cursor="zoom-in";
+    }
+}
 modalImg.onmousedown = function(event) {
-  if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')) { modalImg.style.cursor="grab"; }
+  if(zoom_factor > 100) { modalImg.style.cursor="grab"; }
 }
 modalImg.onmouseup = function(event) {
-  if((mouse_drag==false)||(modalImg.style.maxHeight == (modalImg.naturalHeight+'px'))) modalImg.style.cursor="zoom-out";
+  if((mouse_drag==false)||(zoom_factor > 100)) modalImg.style.cursor="zoom-in";;
 }
 modalImg.onclick = function(event) {
   if(mouse_drag==true) {
       mouse_drag=false;
        return;
      }
+     if (event.shiftKey) {
+       zoom_factor = zoom_factor / 1.2;
+     } else {
+       zoom_factor = zoom_factor * 1.2;
+     }
+     //console.log(zoom_factor);
   //console.log((event.clientX - modalImg.offsetLeft) + ", " + (event.clientY - modalImg.offsetTop));
     if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
       modalImg.style.maxHeight = "90%";
       modalImg.style.maxWidth = "90%";
-      modalImg.style.cursor= "zoom-in";
+      //modalImg.style.cursor= "zoom-in";
       myModal.scrollTop = lastScrollPosition;
       //element.style.transform = "translate(0%, 0%)";
     } else {
       lastScrollPosition = myModal.scrollTop;
-      console.log(myModal.scrollTop);
+      //console.log(myModal.scrollTop);
       var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
       var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
       //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-      modalImg.style.maxHeight = modalImg.naturalHeight+'px';
-      modalImg.style.maxWidth = modalImg.naturalWidth+'px';
+      modalImg.style.maxHeight = zoom_factor+'%';
+      modalImg.style.maxWidth = zoom_factor+'%';
       //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
       myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
-      modalImg.style.cursor= "zoom-out";
+      //modalImg.style.cursor= "zoom-out";
+
+      // var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
+      // var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
+      // //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+      // modalImg.style.maxHeight = modalImg.naturalHeight+'px';
+      // modalImg.style.maxWidth = modalImg.naturalWidth+'px';
+      // //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+      // myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
+      // modalImg.style.cursor= "zoom-out";
     }
 }
 
@@ -942,7 +970,7 @@ function ShowMyModal(imageSRC, chapter, imgNum){
   captionText.innerHTML = bookData[chapter].captions[imgNum-1];
   document.addEventListener('mousedown', () => mouse_drag = false);
   document.addEventListener('mousemove', () => mouse_drag = true);
-  document.addEventListener('mouseup', () => console.log(mouse_drag ? 'drag' : 'click'));
+  //document.addEventListener('mouseup', () => console.log(mouse_drag ? 'drag' : 'click'));
 }
 
 </script>

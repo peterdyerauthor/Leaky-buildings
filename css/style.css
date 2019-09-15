@@ -1778,7 +1778,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right: auto;
   //width: 70%;
   max-height: 230px;
-  max-width: 250px;
+  max-width: 260px;
   height:auto;
   width:auto;
   background-image: url("../img/wood-frame-new.jpg");
@@ -1788,8 +1788,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .image-chapter:hover {opacity: .8;}
 
 .image-chapter-multi {
-  max-height: 120px;
-  max-width: 120px;
+  max-height: 125px;
+  max-width: 125px;
   padding: 5%;
   background-image: url("../img/wood-frame-new.jpg");
 }
