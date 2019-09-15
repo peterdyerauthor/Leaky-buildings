@@ -116,7 +116,7 @@ function img_gallery_tile(){
         //console.log(items[i].src + ", " + items[i].msrc);
         galleryHTML +='          <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">';
         galleryHTML +='            <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML += '             <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '             <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML += '             <div class="photo-text-more">';
         galleryHTML += '               <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML += '               <span class="icon icon-search"></span>';
@@ -126,7 +126,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML += '<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">';
         galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML +='    <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML +='      <span class="icon icon-search"></span>';
@@ -136,7 +136,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">';
         galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML +='    <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML +='      <span class="icon icon-search"></span>';
@@ -146,7 +146,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-8" data-aos="fade-up">';
         galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML +='    <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML +='      <span class="icon icon-search"></span>';
@@ -156,7 +156,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">';
         galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML +='    <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML +='      <span class="icon icon-search"></span>';
@@ -166,7 +166,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up">';
         galleryHTML +='  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML +='    <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML +='    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML +='    <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML +='      <span class="icon icon-search"></span>';
@@ -176,7 +176,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">';
         galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML += '   <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML += '     <span class="icon icon-search"></span>';
@@ -186,7 +186,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">';
         galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML += '   <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML += '     <span class="icon icon-search"></span>';
@@ -196,7 +196,7 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">';
         galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML += '   <div class="photo-text-more">';
         galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
         galleryHTML += '     <span class="icon icon-search"></span>';
@@ -206,9 +206,9 @@ function img_gallery_tile(){
         if(i==items.length)break;
         galleryHTML +='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">';
         galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery">';
-        galleryHTML += '   <img src="' + items[i].src + '" alt="Image" class="img-fluid">';
+        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
         galleryHTML += '   <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
+        galleryHTML += '      <h3 class="heading">' + items[i].title + '</h3>';
         galleryHTML += '     <span class="icon icon-search"></span>';
         galleryHTML += '    </div>';
         galleryHTML += ' </a>';
@@ -222,126 +222,126 @@ function img_gallery_tile(){
         src: 'gallery1/resized_0.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_0.jpg',
+        msrc: 'gallery1/thumbnail_resized_0.jpg',
         title: 'Peter Kim and Jack'
         },
         {
         src: 'gallery1/resized_1.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_1.jpg',
+        msrc: 'gallery1/thumbnail_resized_1.jpg',
         title: 'House concert'
         },
         {
         src: 'gallery1/resized_2.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_2.jpg',
+        msrc: 'gallery1/thumbnail_resized_2.jpg',
         title: 'Peter concentrating on a lick'
         },
         {
         src: 'gallery1/resized_3.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_3.jpg',
+        msrc: 'gallery1/thumbnail_resized_3.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_4.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_4.jpg',
+        msrc: 'gallery1/thumbnail_resized_4.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_5.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_5.jpg',
+        msrc: 'gallery1/thumbnail_resized_5.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_6.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_6.jpg',
+        msrc: 'gallery1/thumbnail_resized_6.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_7.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_7.jpg',
+        msrc: 'gallery1/thumbnail_resized_7.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_8.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_8.jpg',
+        msrc: 'gallery1/thumbnail_resized_8.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_9.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_9.jpg',
+        msrc: 'gallery1/thumbnail_resized_9.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_10.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_10.jpg',
+        msrc: 'gallery1/thumbnail_resized_10.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_11.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_11.jpg',
+        msrc: 'gallery1/thumbnail_resized_11.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_12.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_12.jpg',
+        msrc: 'gallery1/thumbnail_resized_12.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_13.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_13.jpg',
+        msrc: 'gallery1/thumbnail_resized_13.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_14.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_14.jpg',
+        msrc: 'gallery1/thumbnail_resized_14.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_15.jpg',
         w: 1000,
         h: 750,
-        msrc: 'gallery1/thumbnail_15.jpg',
+        msrc: 'gallery1/thumbnail_resized_15.jpg',
         title: 'Image Caption'
         },
         {
         src: 'gallery1/resized_16.jpg',
         w: 1000,
         h: 667,
-        msrc: 'gallery1/thumbnail_16.jpg',
+        msrc: 'gallery1/thumbnail_resized_16.jpg',
         title: 'Ted at Bernard\'s 60th'
         },
         {
         src: 'gallery1/resized_17.jpg',
         w: 1000,
         h: 667,
-        msrc: 'gallery1/thumbnail_17.jpg',
+        msrc: 'gallery1/thumbnail_resized_17.jpg',
         title: 'Ted concentrating'
         }
   ];
