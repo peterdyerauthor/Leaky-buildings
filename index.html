@@ -924,13 +924,14 @@ modalImg.onclick = function(event) {
       mouse_drag=false;
        return;
      }
+
      if (event.shiftKey) {
-       zoom_factor = zoom_factor / 1.2;
+       if(zoom_factor > 100) zoom_factor = zoom_factor / 1.2;
      } else {
-       zoom_factor = zoom_factor * 1.2;
+       if(zoom_factor < 200) zoom_factor = zoom_factor * 1.2;
      }
-     //console.log(zoom_factor);
-  //console.log((event.clientX - modalImg.offsetLeft) + ", " + (event.clientY - modalImg.offsetTop));
+     //console.log("zoom= "+zoom_factor);
+
     if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
       modalImg.style.maxHeight = "90%";
       modalImg.style.maxWidth = "90%";
