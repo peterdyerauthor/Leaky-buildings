@@ -375,7 +375,8 @@ h6 {
 
 #nav-menu-container {
   float: right;
-  margin: 0;
+  margin: -5px;
+
 }
 
 /* Nav Meu Styling */
