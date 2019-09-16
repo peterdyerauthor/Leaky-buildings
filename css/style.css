@@ -1778,7 +1778,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: auto;
   margin-right: auto;
   //width: 70%;
-  max-height: 230px;
+  max-height: 260px;
   max-width: 260px;
   height:auto;
   width:auto;
@@ -1796,8 +1796,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .image-chapter-multi:hover {opacity: .8;}
 .frame {
-width: 260px;
-height: auto;
+//width: 260px;
+//height: auto;
 //border: 5px solid #c00;
 //background: #333;
 
