@@ -35,7 +35,7 @@
 		@include media-breakpoint-down(md) {
 			display: none;
 		}
-	}	
+	}
 	ul {
 		text-align: right;
 		padding: 0;
@@ -181,15 +181,15 @@
 			display: block;
 			position: relative;
 			li {
-				
+
 				&, a {
 					float: none;
 					width: auto;
-					display: inline;	
+					display: inline;
 				}
 			}
 		}
-	}	
+	}
 }
 
 .blog-entry {
