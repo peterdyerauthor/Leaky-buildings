@@ -864,6 +864,17 @@ function displayChapters() {
   return chapterHTML;
 }
 
+document.addEventListener('readystatechange', event => {
+
+    if (event.target.readyState === "interactive") {      //same as:  document.addEventListener("DOMContentLoaded"...   // same as  jQuery.ready
+        //alert("All HTML DOM elements are accessible");
+    }
+
+    if (event.target.readyState === "complete") {
+        whenPageLoaded();
+    }
+
+});
 // Get the modal
 // var modal = document.getElementById("myModal");
 //
