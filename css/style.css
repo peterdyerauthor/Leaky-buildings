@@ -970,7 +970,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #OtherDocs .OtherDocs-img:hover {opacity: 0.7;}
 /* Portfolio Section
 --------------------------------*/
-
+/*
 #portfolio {
   padding: 60px 0;
 }
@@ -1119,7 +1119,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-}
+} */
 
 /* Chapters Section
 --------------------------------*/
@@ -1812,13 +1812,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .image-chapter {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  //margin-left: auto;
+  //margin-right: auto;
   //width: 70%;
   max-height: 260px;
   max-width: 260px;
+  //width:auto;
   height:auto;
-  width:auto;
   background-image: url("../img/wood-frame-new.jpg");
   padding: 5%;
 
@@ -1826,14 +1827,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 .image-chapter:hover {opacity: .8;}
 
 .image-chapter-multi {
-  max-height: 125px;
-  max-width: 125px;
-  padding: 5%;
+  width: 130px;
+  height: auto;
+  max-height: 130px;
+  max-width: 130px;
+  padding: 4%;
   background-image: url("../img/wood-frame-new.jpg");
 }
 .image-chapter-multi:hover {opacity: .8;}
+
 .frame {
-//width: 260px;
+//max-width: 260px;
+//max-height: 260px;
 //height: auto;
 //border: 5px solid #c00;
 //background: #333;
