@@ -10,6 +10,19 @@
     }
   });
 
+  function getCurrentSection () {
+      var cutoff = $(window).scrollTop();
+      var curIndex = 0;
+      for(var index = 0; index < $('section').length; index++){
+          if ($('section').eq(index).offset().top >= cutoff + 78) {
+              curIndex = index;
+              break;
+          }
+      }
+      console.log(curIndex);
+      return curIndex;
+  };
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -18,11 +31,21 @@
       $('.back-to-top').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
+
+  $('#scrollWindowDown').click(function(e){
+      e.preventDefault();
+      var curIndex = getCurrentSection();
+      if (curIndex === $('section').length) { return; }
+      var cutoff = $(window).scrollTop();
+      if ($('section').eq(curIndex).offset().top !== cutoff+1) { curIndex = curIndex-1; } /* Check if the current section is at the top of the page or has been scrolled */
+
+      $('html, body').animate({ scrollTop: ($('section').eq(curIndex+1).offset().top - 77)},1200);
   });
 
+  $('.back-to-top').click(function(){
+    $('html, body').animate({scrollTop : 0},1200, 'easeInOutExpo');
+    return false;
+  });
   // Initiate the wowjs animation library
   new WOW().init();
 

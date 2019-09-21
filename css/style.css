@@ -63,12 +63,32 @@ h6 {
   transition: background 0.5s;
   z-index: 11;
 }
+.next-section-down {
+  position: fixed;
+  //display: none;
+  background: #18d26e;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  left: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
 
 .back-to-top i {
   padding-top: 12px;
   color: #fff;
 }
 
+.next-section-down i {
+  padding-top: 12px;
+  color: #fff;
+}
 /* Prelaoder */
 
 #preloader {
@@ -289,7 +309,7 @@ h6 {
   cursor: pointer;
 }
 
-#intro .btn-get-started {
+#intro .btn-get-started_old {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -301,6 +321,23 @@ h6 {
   margin: 10px;
   color: #fff;
   background: #18d26e;
+}
+
+.btn-get-started {
+  position: fixed;
+  //display: none;
+  background: #18d26e;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
 }
 
 #intro .btn-get-started:hover {
