@@ -23,7 +23,7 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
-
+  <link rel="stylesheet" href="css/galleryCSS/fancybox.css">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -125,13 +125,13 @@
   }
 
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 620px){
+  /* @media only screen and (max-width: 620px){
     .modal-content {
       height:auto;
       width:auto;
       width: 100%;
     }
-  }
+  } */
   .dollarClass::before {
   content: "$";
 }
@@ -279,6 +279,66 @@ figure {
       </div>
     </section>
 -->
+
+
+<!-- The Modal -->
+<!-- <script type="text/javascript" src="js/dragscroll.js"></script>
+<div id="modalContainer"><div id="myModal" class="modal dragscroll">
+  <span class="close">X</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></div> -->
+
+    <!--==========================
+      chapters Section
+    ============================-->
+    <section id="chapters"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Rottenomics Chapters</h3>
+        </header>
+
+<!-- filtering
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="chapters-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+-->
+        <!-- <span class="chapterStyle" id='testDiv' style="position: relative; height: 1080px;"> -->
+        <div class="row" style="position: relative; " id='testDiv'>
+
+
+
+<!--
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+-->
+</div>
+
+
+
+
+      </div>
+    </section><!-- #chapters -->
     <!--==========================
       Facts Section
     ============================-->
@@ -343,66 +403,6 @@ figure {
 
     </section>
 <!-- #OtherDocs -->
-
-<!-- The Modal -->
-<script type="text/javascript" src="js/dragscroll.js"></script>
-<div id="modalContainer"><div id="myModal" class="modal dragscroll">
-  <span class="close">X</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div></div>
-
-    <!--==========================
-      chapters Section
-    ============================-->
-    <section id="chapters"  class="section-bg" >
-      <div class="container">
-
-        <header class="section-header">
-          <h3 class="section-title">Rottenomics Chapters</h3>
-        </header>
-
-<!-- filtering
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="chapters-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
--->
-        <!-- <span class="chapterStyle" id='testDiv' style="position: relative; height: 1080px;"> -->
-        <div class="row" style="position: relative; " id='testDiv'>
-
-
-
-<!--
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
--->
-</div>
-
-
-
-
-      </div>
-    </section><!-- #chapters -->
-
     <!--==========================
       Clients Section
     ============================
@@ -713,8 +713,8 @@ figure {
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
+  <!-- <script src="contactform/contactform.js"></script> -->
+  <script src="js/galleryJS/jquery.fancybox.js"></script>
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
@@ -753,7 +753,7 @@ var bookData = {
   5: {
     title: "Monolithic design and materials",
     numberOfImages: 4,
-      captions: ["\"All you need are these tools\” Malcolm Walker, Progressive Building, June/July 02, courtesy of Malcolm Walker", "Monolithically clad model—James Hardie advert July 1995, courtesy of Rose McLaughlan", "\“So want to use our product\” Cartoon by Malcolm Walker, Progressive Building August-September 2000", "Rot behind monolithic cladding, photo courtesy of Philip O’Sullivan"]
+      captions: ["&quot;All you need are these tools&quot; Malcolm Walker, Progressive Building, June/July 02, courtesy of Malcolm Walker", "Monolithically clad model—James Hardie advert July 1995, courtesy of Rose McLaughlan", "\“So want to use our product\” Cartoon by Malcolm Walker, Progressive Building August-September 2000", "Rot behind monolithic cladding, photo courtesy of Philip O’Sullivan"]
   },
   6: {
     title: "Building controls: discontent, research, reports and a solution",
@@ -778,7 +778,7 @@ var bookData = {
   10: {
     title: "Lost training, lost skills",
     numberOfImages: 2,
-    captions: ["\"Skills shortage—Skilled arse kicker wanted\", courtesy of  Malcolm Walker, Progressive Building June/July 2007", "\"Embrace Your Union\" Alexander Turnbull Library, courtesy of E tū"]
+    captions: ["&quot;Skills shortage—Skilled arse kicker wanted&quot;, courtesy of  Malcolm Walker, Progressive Building June/July 2007", "&quot;Embrace Your Union&quot; Alexander Turnbull Library, courtesy of E tū"]
   },
   11: {
     title: "Private building certifiers: set up to fail",
@@ -828,7 +828,7 @@ var bookData = {
   20: {
     title: "Leaky buildings today",
     numberOfImages: 1,
-    captions: ["\"Some Wellington offices we'd like to see demolished\" <br> Editorial cartoon, Tom Scott in Dominion Post 22 December 2016"]
+    captions: ["&quot;Some Wellington offices we'd like to see demolished&quot; <br> Editorial cartoon, Tom Scott in Dominion Post 22 December 2016"]
   }
 }
 function displayChapters() {
@@ -846,19 +846,17 @@ function displayChapters() {
     if(bookData[i].numberOfImages>1){
         chapterHTML += '    <div class="grid-multi">';
       for(j = 1;j<=bookData[i].numberOfImages;j++){
-        chapterHTML += '    <a href="javascript:ShowMyModal(\'img/Chapter-' + i + '/Chapter-' + i + '-' + j + '.jpg\',' + i + ', ' + j + ');"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '-'+ j + '.jpg" class="image-chapter-multi" alt="Chapter ' + i + ' Image-' + j + '"></a>';
+        // chapterHTML += '    <a href="javascript:ShowMyModal(\'img/Chapter-' + i + '/Chapter-' + i + '-' + j + '.jpg\',' + i + ', ' + j + ');"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '-'+ j + '.jpg" class="image-chapter-multi" alt="Chapter ' + i + ' Image-' + j + '"></a>';
+        chapterHTML += '    <a href="img/Chapter-' + i + '/Chapter-' + i + '-' + j + '.jpg" data-fancybox="gallery" data-caption="' + bookData[i].captions[j-1] + '"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '-'+ j + '.jpg" class="image-chapter-multi" alt="Chapter ' + i + ' Image-' + j + '"></a>';
       }
         chapterHTML += '    </div>';
     } else {
       chapterHTML += '    <div class="chapter-grid">';
-      chapterHTML += '    <a href="javascript:ShowMyModal(\'img/Chapter-' + i + '/Chapter-' + i + '.jpg\',' + i + ', ' + 1 + ');"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '.jpg" class="image-chapter" alt="Chapter ' + i + ' Image"></a>';
+      // chapterHTML += '    <a href="javascript:ShowMyModal(\'img/Chapter-' + i + '/Chapter-' + i + '.jpg\',' + i + ', ' + 1 + ');"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '.jpg" class="image-chapter" alt="Chapter ' + i + ' Image"></a>';
+      chapterHTML += '    <a href="img/Chapter-' + i + '/Chapter-' + i + '.jpg" data-fancybox="gallery" data-caption="' + bookData[i].captions[0] + '"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '.jpg" class="image-chapter" alt="Chapter ' + i + ' Image"></a>';
       chapterHTML += '    </div>';
     }
     chapterHTML += '    </figure>';
-    chapterHTML += '    <div class="portfolio-info">';
-
-    chapterHTML += '      <p style="text-align: center;">' + bookData[i].title + '</p>';
-    chapterHTML += '    </div>';
     chapterHTML += '  </div>';
     chapterHTML += '  </div>';
   }
@@ -866,113 +864,113 @@ function displayChapters() {
 }
 
 // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-var lastScrollPosition = 0;
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-  if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
-    modalImg.style.maxHeight = "90%";
-    modalImg.style.maxWidth = "90%";
-    modalImg.style.cursor= "zoom-in";
-  }
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-      if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
-        modalImg.style.maxHeight = "90%";
-        modalImg.style.maxWidth = "90%";
-        modalImg.style.cursor= "zoom-in";
-      }
-
-  }
-}
-var zoom_factor = 100;
-
-window.onkeydown=function(e){
-
-    if (e.which = 16){
-      //console.log("down " + e.which);
-      modalImg.style.cursor="zoom-out";
-    }
-}
-window.onkeyup=function(e){
-
-    if (e.which = 16){
-      //console.log("up " + e.which);
-      modalImg.style.cursor="zoom-in";
-    }
-}
-modalImg.onmousedown = function(event) {
-  if(zoom_factor > 100) { modalImg.style.cursor="grab"; }
-}
-modalImg.onmouseup = function(event) {
-  if((mouse_drag==false)||(zoom_factor > 100)) modalImg.style.cursor="zoom-in";;
-}
-modalImg.onclick = function(event) {
-  if(mouse_drag==true) {
-      mouse_drag=false;
-       return;
-     }
-
-     if (event.shiftKey) {
-       if(zoom_factor > 100) zoom_factor = zoom_factor / 1.2;
-     } else {
-       if(zoom_factor < 200) zoom_factor = zoom_factor * 1.2;
-     }
-     //console.log("zoom= "+zoom_factor);
-
-    if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
-      modalImg.style.maxHeight = "90%";
-      modalImg.style.maxWidth = "90%";
-      //modalImg.style.cursor= "zoom-in";
-      myModal.scrollTop = lastScrollPosition;
-      //element.style.transform = "translate(0%, 0%)";
-    } else {
-      lastScrollPosition = myModal.scrollTop;
-      //console.log(myModal.scrollTop);
-      var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
-      var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
-      //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-      modalImg.style.maxHeight = zoom_factor+'%';
-      modalImg.style.maxWidth = zoom_factor+'%';
-      //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-      myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
-      //modalImg.style.cursor= "zoom-out";
-
-      // var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
-      // var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
-      // //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-      // modalImg.style.maxHeight = modalImg.naturalHeight+'px';
-      // modalImg.style.maxWidth = modalImg.naturalWidth+'px';
-      // //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-      // myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
-      // modalImg.style.cursor= "zoom-out";
-    }
-}
-
-var mouse_drag=false;
-function ShowMyModal(imageSRC, chapter, imgNum){
-  // code to show modal + caption here
-  //console.log(bookData[chapter].captions);
-  modal.style.display = "block";
-  modalImg.src = imageSRC;
-  //console.log(modal.screenTop + " x " + modal.screenY);
-  captionText.innerHTML = bookData[chapter].captions[imgNum-1];
-  document.addEventListener('mousedown', () => mouse_drag = false);
-  document.addEventListener('mousemove', () => mouse_drag = true);
-  //document.addEventListener('mouseup', () => console.log(mouse_drag ? 'drag' : 'click'));
-}
+// var modal = document.getElementById("myModal");
+//
+// // Get the image and insert it inside the modal - use its "alt" text as a caption
+// var img = document.getElementById("myImg");
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// var lastScrollPosition = 0;
+//
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+//
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+//   if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
+//     modalImg.style.maxHeight = "90%";
+//     modalImg.style.maxWidth = "90%";
+//     modalImg.style.cursor= "zoom-in";
+//   }
+// }
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//       modal.style.display = "none";
+//       if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
+//         modalImg.style.maxHeight = "90%";
+//         modalImg.style.maxWidth = "90%";
+//         modalImg.style.cursor= "zoom-in";
+//       }
+//
+//   }
+// }
+// var zoom_factor = 100;
+//
+// window.onkeydown=function(e){
+//
+//     if (e.which = 16){
+//       //console.log("down " + e.which);
+//       modalImg.style.cursor="zoom-out";
+//     }
+// }
+// window.onkeyup=function(e){
+//
+//     if (e.which = 16){
+//       //console.log("up " + e.which);
+//       modalImg.style.cursor="zoom-in";
+//     }
+// }
+// modalImg.onmousedown = function(event) {
+//   if(zoom_factor > 100) { modalImg.style.cursor="grab"; }
+// }
+// modalImg.onmouseup = function(event) {
+//   if((mouse_drag==false)||(zoom_factor > 100)) modalImg.style.cursor="zoom-in";;
+// }
+// modalImg.onclick = function(event) {
+//   if(mouse_drag==true) {
+//       mouse_drag=false;
+//        return;
+//      }
+//
+//      if (event.shiftKey) {
+//        if(zoom_factor > 100) zoom_factor = zoom_factor / 1.2;
+//      } else {
+//        if(zoom_factor < 200) zoom_factor = zoom_factor * 1.2;
+//      }
+//      //console.log("zoom= "+zoom_factor);
+//
+//     if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
+//       modalImg.style.maxHeight = "90%";
+//       modalImg.style.maxWidth = "90%";
+//       //modalImg.style.cursor= "zoom-in";
+//       myModal.scrollTop = lastScrollPosition;
+//       //element.style.transform = "translate(0%, 0%)";
+//     } else {
+//       lastScrollPosition = myModal.scrollTop;
+//       //console.log(myModal.scrollTop);
+//       var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
+//       var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
+//       //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+//       modalImg.style.maxHeight = zoom_factor+'%';
+//       modalImg.style.maxWidth = zoom_factor+'%';
+//       //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+//       myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
+//       //modalImg.style.cursor= "zoom-out";
+//
+//       // var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
+//       // var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
+//       // //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+//       // modalImg.style.maxHeight = modalImg.naturalHeight+'px';
+//       // modalImg.style.maxWidth = modalImg.naturalWidth+'px';
+//       // //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
+//       // myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
+//       // modalImg.style.cursor= "zoom-out";
+//     }
+// }
+//
+// var mouse_drag=false;
+// function ShowMyModal(imageSRC, chapter, imgNum){
+//   // code to show modal + caption here
+//   //console.log(bookData[chapter].captions);
+//   modal.style.display = "block";
+//   modalImg.src = imageSRC;
+//   //console.log(modal.screenTop + " x " + modal.screenY);
+//   captionText.innerHTML = bookData[chapter].captions[imgNum-1];
+//   document.addEventListener('mousedown', () => mouse_drag = false);
+//   document.addEventListener('mousemove', () => mouse_drag = true);
+//   //document.addEventListener('mouseup', () => console.log(mouse_drag ? 'drag' : 'click'));
+// }
 
 </script>
 

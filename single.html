@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/galleryCSS/bootstrap.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/galleryCSS/magnific-popup.css">
     <link rel="stylesheet" href="css/galleryCSS/jquery-ui.css">
     <link rel="stylesheet" href="css/galleryCSS/owl.carousel.min.css">
@@ -22,7 +23,7 @@
     <link rel="stylesheet" href="css/galleryCSS/fancybox.css">
 
     <link rel="stylesheet" href="css/galleryCSS/style.css">
-
+    <link rel="stylesheet" href="css/galleryCSS/substitue-header.css">
   </head>
   <body onload="whenPageLoaded()">
 
@@ -38,7 +39,32 @@
     <div class="site-mobile-menu-body"></div>
   </div>
 
-  <header class="header-bar d-flex d-lg-block align-items-center">
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left" >
+        <h1><a href="index.html#new-intro" class="scrollto">Rottenomics Gallery</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html#new-intro">Home</a></li>
+          <li><a href="index.html#chapters">Chapters</a></li>
+          <li><a href="#index.htmlOtherDocs">Documents</a></li>
+          <li><a href="single.html">Image Gallery</a></li>
+          <li><a href="index.html#team">About the author</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!-- <header class="header-bar d-flex d-lg-block align-items-center">
     <div class="site-logo" style="font: Montserrat;">
       <a href="index.html">Rottenomics</a>
     </div>
@@ -60,30 +86,22 @@
         <li><a href="#"><span class="icon-instagram"></span></a></li>
       </ul>
     </div>
-  </header>
+  </header> -->
   <main class="main-content">
     <div class="container-fluid photos">
-
-      <div class="row pt-4 mb-5 text-center">
-        <div class="col-12">
-          <h2 class="text-white mb-4">Rottenomics Gallery</h2>
-        </div>
-      </div>
 
       <div class="row align-items-stretch" id="galleryArea" style="padding: 8px;">
 
       </div>
 
 
-      <div class="row justify-content-center">
+      <!-- <div class="row justify-content-center">
         <div class="col-md-12 text-center py-5">
           <p>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </p>
         </div>
-      </div>
+      </div> -->
     </div>
   </main>
 
@@ -100,9 +118,14 @@
   <script src="js/galleryJS/jquery.magnific-popup.min.js"></script>
   <script src="js/galleryJS/bootstrap-datepicker.min.js"></script>
   <script src="js/galleryJS/aos.js"></script>
-
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="js/galleryJS/jquery.fancybox.js"></script>
-
+  <script src="lib/wow/wow.min.js"></script>
   <script src="js/galleryJS/main.js"></script>
 
 <script>
@@ -238,6 +261,6 @@ function img_gallery_tile(){
 */
 </script>
 <script src="js/gallery1.js"></script>
-
+<script src="js/main.js"></script>
   </body>
 </html>
