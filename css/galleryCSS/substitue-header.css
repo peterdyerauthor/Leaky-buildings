@@ -38,7 +38,7 @@
 #header #logo h1 a:hover {
   color: #fff;
   padding-left: 10px;
-  border-left: 4px solid #18d26e;
+  border-left: 4px solid #098040;
 }
 
 #header #logo img {
@@ -74,7 +74,7 @@
   display: block;
   width: 40px;
   height: 3px;
-  background: #18d26e;
+  background: #098040;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -171,7 +171,7 @@
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #18d26e;
+  color: #098040;
 }
 
 .nav-menu > li {
@@ -199,7 +199,7 @@
 }
 
 .nav-menu ul li:hover > a {
-  color: #18d26e;
+  color: #098040;
 }
 
 .nav-menu ul ul {
@@ -268,7 +268,7 @@
 }
 
 #mobile-nav ul li a:hover {
-  color: #18d26e;
+  color: #098040;
 }
 
 #mobile-nav ul li li {
@@ -276,7 +276,7 @@
 }
 
 #mobile-nav ul li.menu-active a {
-  color: #18d26e;
+  color: #098040;
 }
 
 #mobile-nav ul .menu-has-children i {
@@ -289,7 +289,7 @@
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #18d26e;
+  color: #098040;
 }
 
 #mobile-nav ul .menu-has-children li a {
@@ -297,7 +297,7 @@
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #18d26e;
+  color: #098040;
 }
 
 #mobile-body-overly {
