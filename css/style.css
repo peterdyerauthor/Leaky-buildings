@@ -618,11 +618,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   content: '';
   position: absolute;
   display: block;
-  width: 40px;
-  height: 3px;
+  width: 60px;
+  height: 4px;
   background: #098040;
+  border-radius: 40%;
   bottom: 0;
-  left: calc(50% - 20px);
+  left: calc(50% - 30px);
 }
 
 .section-header p {
@@ -960,11 +961,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 10;
 }
 
-#OtherDocs .OtherDocs-img {
+#OtherDocs .OtherDocs-img1 {
   text-align: center;
   padding: 5px;
+  margin: auto;
+  width: 100%;
+  //border: 1px solid #d0d0d0;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3)
+  z-index: 2;
+}
+#OtherDocs .OtherDocs-img2 {
+  text-align: center;
+  padding: 5px;
+  margin: auto;
   width: 70%;
-  border: 1px solid #d0d0d0;
+  //border: 1px solid #d0d0d0;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3)
   z-index: 2;
 }
   #OtherDocs .OtherDocs-img:hover {opacity: 0.7;}
@@ -1274,31 +1286,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-/* Clients Section
+/* galleryLink Section
 --------------------------------*/
 
-#clients {
+#galleryLink {
   padding: 60px 0;
 }
 
-#clients img {
+#galleryLink img {
   max-width: 100%;
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.3s;
   padding: 15px 0;
 }
 
-#clients img:hover {
-  opacity: 1;
+#galleryLink img:hover {
+  opacity: .8;
 }
 
-#clients .owl-nav,
-#clients .owl-dots {
+#galleryLink .owl-nav,
+#galleryLink .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
 
-#clients .owl-dot {
+#galleryLink .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -1307,7 +1319,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #ddd;
 }
 
-#clients .owl-dot.active {
+#galleryLink .owl-dot.active {
   background-color: #098040;
 }
 
@@ -1389,8 +1401,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #team {
-  background: #fff;
-  padding: 20px 0;
+  padding: 60px 0;
 }
 
 #team .member {
@@ -1943,3 +1954,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right: -50%;
   transform: translate(-50%, -45%);
 }
+.gallery-collage {
+  opacity: 1;
+}
+.gallery-collage:hover {opacity: .8;}

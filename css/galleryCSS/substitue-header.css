@@ -412,3 +412,22 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: inline;
   }
 }
+
+}
+.back-to-main-page {
+  position: fixed;
+  //display: none;
+  background: #098040;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  left: 15px;
+  opacity: .5;
+  bottom: 50vh;
+  transition: background 0.5s;
+  z-index: 11;
+}

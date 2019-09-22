@@ -36,102 +36,7 @@
 
   <style>
   body {font-family: Arial, Helvetica, sans-serif;}
-/*
-  #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
 
-  #myImg:hover {opacity: 0.7;}
-
-  / * The Modal (background) * /
-  .modal {
-    display: none; / * Hidden by default * /
-    position: fixed; / * Stay in place * /
-    z-index: 100; / * Sit on top * /
-    padding-top: 100px; / * Location of the box * /
-    left: 0;
-    top: 0;
-    width: 100%; / * Full width * /
-    height: 100%; / * Full height * /
-    overflow: auto; / * Enable scroll if needed * /
-    //background-color: rgb(f,f,f); / * Fallback color * /
-    background-color: rgba(0,0,0,0.8); / * Black w/ opacity * /
-  }
-
-  / * Modal Content (image) * /
-  .modal-content {
-    background-color: #000;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    height:auto;
-    width:auto;
-    max-width: 90%;
-    max-height: 90%;
-    cursor: zoom-in;
-  }
-
-  / * Caption of Modal Image * /
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 350px;
-  }
-
-  / * Add Animation * /
-  .modal-content, #caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
-  }
-
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-
-  / * The Close Button * /
-  .close {
-    position: absolute;
-    position: -webkit-sticky; / * Safari * /
-    z-index: 101;
-    top: -20%;
-    right: 2%;
-    position: sticky;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  } */
-
-  /* 100% Image Width on Smaller Screens */
-  /* @media only screen and (max-width: 620px){
-    .modal-content {
-      height:auto;
-      width:auto;
-      width: 100%;
-    }
-  } */
   .dollarClass::before {
   content: "$";
 }
@@ -387,14 +292,14 @@ figure {
         </div>
         <div class="row">
         <div class="col-md-6">
-          <div>
-            <a href="additional documents/PWC-leaky-homes-report.pdf"><img src="img/PWC-leaky-homes-report-cover.jpg" alt="" class="OtherDocs-img" center></a>
+          <div class="OtherDocs-img1">
+            <a href="additional documents/PWC-leaky-homes-report.pdf"><img src="img/PWC-leaky-homes-report-cover.jpg" alt="" class="OtherDocs-img2"></a>
           </div>
           <p  style="text-align: center;">Weathertightness—estimating the cost. PriceWaterhouseCoopers 2009.</p>
         </div>
           <div class="col-md-6">
-          <div>
-            <a href="additional documents/document-1.pdf"><img src="img/declassified-document-1500x1123.jpg" alt="" class="OtherDocs-img" center></a>
+          <div  class="OtherDocs-img2">
+            <a href="additional documents/OIA-doc.pdf"><img src="img/OIA-doc.jpg" alt="" class="OtherDocs-img2"></a>
           </div>
           <p style="text-align: center;">Data on Residential Weathertightness Failures, Draft 16 February 2015<br>Dr Andrea Knox (Counterbalance Research and Evaluation) and <br>Lisa Star (Proof Research)</p>
         </div>
@@ -402,33 +307,29 @@ figure {
       </div>
 
     </section>
-<!-- #OtherDocs -->
+
+
+<!-- #Gallery link -->
     <!--==========================
-      Clients Section
-    ============================
-    <section id="clients" class="wow fadeInUp">
+      Link to photo gallery
+    ============================ -->
+    <section id="galleryLink" class="section-bg wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
-          <h3>Our Clients</h3>
+          <a href="single.html"><h3>Rottenomics image gallery</h3></a>
         </header>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
+        <div class="row">
+          <div class="col-md-1"></div>
+        <div class="col-md-11">
+          <a href="single.html"><img src="img/gallery-collage.png"></a>
         </div>
-
       </div>
-    </section> #clients -->
+      </div>
+    </section> <!--  #Gallery link -->
 
     <!--==========================
-      Clients Section
+      galleryLink Section
     ============================-->
     <section id="testimonials" class="section-bg wow fadeInUp">
       <div class="container">
@@ -504,28 +405,25 @@ figure {
     <!--==========================
       About Us Section
     ============================-->
-    <section id="team" class="text-center">
+
+    <section id="team" class="section-bg wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
           <h3>About the Author</h3>
-
-          <div class="card-body">
-              <img src="img/PDyer-2.jpg" alt="Author1" class="img-fluid rounded-circle w-30 mb-3">
-              <h3>Peter Dyer</h3>
-              <!-- <h5>Author, researcher, musician</h5> -->
-              <p>Peter Dyer was born in 1953 in Kansas City, Missouri, USA. He lived in New Jersey until he shifted to California to go to university in 1970. Married in 1979, he and his wife lived in California until they shifted to Palmerston North in January 2004. They have lived in Wellington since 2008.</p>
-              <div class="d-flex justify-content-center">
-                  <div class="p-4">
-                      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                  </div>
-                  <div class="p-4">
-                      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                  </div>
-                  <div class="p-4">
-                      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                  </div>
+        </header>
+            <div class="row">
+            <div class="col-md-12">
+              <div align="center">
+                <img src="img/PDyer-2.jpg" alt="Author1" class="img-fluid rounded-circle w-30 mb-3">
               </div>
+              <h3 align="center">Peter Dyer</h3>
+            </div>
+
+              <!-- <h5>Author, researcher, musician</h5> -->
+
+              <p align="center">Peter Dyer was born in 1953 in Kansas City, Missouri, USA. He lived in New Jersey until he shifted to California to go to university in 1970. Married in 1979, he and his wife lived in California until they shifted to Palmerston North in January 2004. They have lived in Wellington since 2008.</p>
+
             </div>
 
 
@@ -631,7 +529,7 @@ figure {
               <li class="menu-active"><a href="#new-intro">Home</a></li>
               <li><a href="#chapters">Chapters</a></li>
               <li><a href="#OtherDocs">Documents</a></li>
-              <li><a href="single.html">Image Gallery</a></li>
+              <li>s</li>
               <li><a href="#team">About the author</a></li>
               <li><a href="#contact">Contact</a></li>
               <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
@@ -694,7 +592,7 @@ figure {
 
   </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" id="scrollWindowUp" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <a href="#" id="scrollWindowDown" class="next-section-down"><i class="fa fa-chevron-down"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
@@ -875,114 +773,7 @@ document.addEventListener('readystatechange', event => {
     }
 
 });
-// Get the modal
-// var modal = document.getElementById("myModal");
-//
-// // Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = document.getElementById("myImg");
-// var modalImg = document.getElementById("img01");
-// var captionText = document.getElementById("caption");
-// var lastScrollPosition = 0;
-//
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-//
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-//   if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
-//     modalImg.style.maxHeight = "90%";
-//     modalImg.style.maxWidth = "90%";
-//     modalImg.style.cursor= "zoom-in";
-//   }
-// }
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//       modal.style.display = "none";
-//       if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
-//         modalImg.style.maxHeight = "90%";
-//         modalImg.style.maxWidth = "90%";
-//         modalImg.style.cursor= "zoom-in";
-//       }
-//
-//   }
-// }
-// var zoom_factor = 100;
-//
-// window.onkeydown=function(e){
-//
-//     if (e.which = 16){
-//       //console.log("down " + e.which);
-//       modalImg.style.cursor="zoom-out";
-//     }
-// }
-// window.onkeyup=function(e){
-//
-//     if (e.which = 16){
-//       //console.log("up " + e.which);
-//       modalImg.style.cursor="zoom-in";
-//     }
-// }
-// modalImg.onmousedown = function(event) {
-//   if(zoom_factor > 100) { modalImg.style.cursor="grab"; }
-// }
-// modalImg.onmouseup = function(event) {
-//   if((mouse_drag==false)||(zoom_factor > 100)) modalImg.style.cursor="zoom-in";;
-// }
-// modalImg.onclick = function(event) {
-//   if(mouse_drag==true) {
-//       mouse_drag=false;
-//        return;
-//      }
-//
-//      if (event.shiftKey) {
-//        if(zoom_factor > 100) zoom_factor = zoom_factor / 1.2;
-//      } else {
-//        if(zoom_factor < 200) zoom_factor = zoom_factor * 1.2;
-//      }
-//      //console.log("zoom= "+zoom_factor);
-//
-//     if(modalImg.style.maxHeight == (modalImg.naturalHeight+'px')){
-//       modalImg.style.maxHeight = "90%";
-//       modalImg.style.maxWidth = "90%";
-//       //modalImg.style.cursor= "zoom-in";
-//       myModal.scrollTop = lastScrollPosition;
-//       //element.style.transform = "translate(0%, 0%)";
-//     } else {
-//       lastScrollPosition = myModal.scrollTop;
-//       //console.log(myModal.scrollTop);
-//       var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
-//       var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
-//       //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-//       modalImg.style.maxHeight = zoom_factor+'%';
-//       modalImg.style.maxWidth = zoom_factor+'%';
-//       //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-//       myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
-//       //modalImg.style.cursor= "zoom-out";
-//
-//       // var leftFraction = (event.clientX - modalImg.offsetLeft)/modalImg.width;
-//       // var topFraction = (event.clientY - modalImg.offsetTop+myModal.scrollTop)/modalImg.height;
-//       // //console.log(modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-//       // modalImg.style.maxHeight = modalImg.naturalHeight+'px';
-//       // modalImg.style.maxWidth = modalImg.naturalWidth+'px';
-//       // //console.log("after- " + modalImg.width + ", " + leftFraction + ", " + modalImg.height + ", " + topFraction);
-//       // myModal.scrollTo(modalImg.width*leftFraction-window.innerWidth/2, modalImg.height*topFraction-window.innerHeight/2);
-//       // modalImg.style.cursor= "zoom-out";
-//     }
-// }
-//
-// var mouse_drag=false;
-// function ShowMyModal(imageSRC, chapter, imgNum){
-//   // code to show modal + caption here
-//   //console.log(bookData[chapter].captions);
-//   modal.style.display = "block";
-//   modalImg.src = imageSRC;
-//   //console.log(modal.screenTop + " x " + modal.screenY);
-//   captionText.innerHTML = bookData[chapter].captions[imgNum-1];
-//   document.addEventListener('mousedown', () => mouse_drag = false);
-//   document.addEventListener('mousemove', () => mouse_drag = true);
-//   //document.addEventListener('mouseup', () => console.log(mouse_drag ? 'drag' : 'click'));
-// }
+
 
 </script>
 
