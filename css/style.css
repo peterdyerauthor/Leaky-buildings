@@ -1662,12 +1662,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top h4::before {
   right: 0;
-  background: #555;
+  background: #098040;
 }
 
 #footer .footer-top h4::after {
   background: #098040;
-  width: 60px;
+  width: 120px;
 }
 
 #footer .footer-top .footer-links {
