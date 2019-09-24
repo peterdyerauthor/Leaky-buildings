@@ -14,7 +14,7 @@
       var cutoff = $(window).scrollTop() -92;
       var curIndex = 0;
       for(var index = 0; index < $('section').length; index++){
-        console.log("section "+index+": "+$('section').eq(index).offset().top);
+        //console.log("section "+index+": "+$('section').eq(index).offset().top);
           if ($('section').eq(index).offset().top >= cutoff) {
               curIndex = index;
               break;
@@ -36,7 +36,7 @@
   $('#scrollWindowUp').click(function(e){
       e.preventDefault();
       var curIndex = getCurrentSection();
-      console.log("up "+curIndex);
+      //console.log("up "+curIndex);
       if (curIndex === 0) { return; }
       $('html, body').animate({ scrollTop: ($('section').eq(curIndex-1).offset().top)-10},1200);
   });
@@ -44,7 +44,7 @@
   $('#scrollWindowDown').click(function(e){
       e.preventDefault();
       var curIndex = getCurrentSection();
-      console.log("down "+curIndex);
+      //console.log("down "+curIndex);
       if (curIndex === $('section').length) { return; }
       var cutoff = $(window).scrollTop();
       //if ($('section').eq(curIndex).offset().top !== cutoff+1) { curIndex = curIndex-1; } /* Check if the current section is at the top of the page or has been scrolled */
