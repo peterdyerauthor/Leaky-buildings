@@ -1958,3 +1958,63 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 1;
 }
 .gallery-collage:hover {opacity: .8;}
+
+.announcement {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.announcement h4 {
+  padding-left: 20px;
+}
+.announcement button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #098040;
+    padding:12px 30px;
+    font-size: 20px;
+    border: 1px solid #0c8050;
+    background-image: linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(4,118,54)),
+        color-stop(1, rgb(14,138,74))
+    );
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: -1px -1px 0px rgba(0,0,0,.4);
+
+    -webkit-box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+
+
+    /* -webkit-box-shadow: 0px 6px 0px #064a26, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 6px 0px #064a26, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 6px 0px #064a26, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5); */
+}
+.announcement button:active {
+    background-image: linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(10,130,66)),
+        color-stop(1, rgb(6,120,60))
+    );
+}
