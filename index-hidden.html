@@ -36,7 +36,7 @@
 
 </head>
 
-<body onload="whenPageLoaded()">
+<body>
 
   <!--==========================
     Header
@@ -119,10 +119,11 @@
         <header class="section-header">
           <h3 class="section-title">Rottenomics Chapters</h3>
         </header>
-        <div class="row" style="position: relative; " id='testDiv'>
+        <div class="row"" id='testDiv'>
         </div>
       </div>
     </section><!-- #chapters -->
+
     <!--==========================
       Facts Section
     ============================-->
@@ -540,17 +541,13 @@ $(document).ready(function() {
 
     var chapterHTML = "";
     for (i = 1; i < 21; i++) {
-      if ((i % 4) == 1) chapterHTML += '<div class="col-lg-3 col-sm-6 col-sm-1 portfolio-item">';
-      else if ((i % 4) == 2) chapterHTML += '<div class="col-lg-3 col-sm-6 col-sm-1 portfolio-item">';
-      else if ((i % 4) == 3) chapterHTML += '<div class="col-lg-3 col-sm-6 col-sm-1 portfolio-item">';
-      else if ((i % 4) == 0) chapterHTML += '<div class="col-lg-3 col-sm-6 col-sm-1 portfolio-item">'
-      chapterHTML += '  <div class="portfolio-wrap">';
+      chapterHTML +=      '<div class="col-lg-3 col-sm-6 col-sm-1 chapter-item">';
+      chapterHTML += '  <div>';
       chapterHTML += '      <h4 style="text-align: center;">Chapter ' + i + '</h4>';
       chapterHTML += '    <figure>';
       if (bookData[i].numberOfImages > 1) {
         chapterHTML += '    <div class="grid-multi">';
         for (j = 1; j <= bookData[i].numberOfImages; j++) {
-          // chapterHTML += '    <a href="javascript:ShowMyModal(\'img/Chapter-' + i + '/Chapter-' + i + '-' + j + '.jpg\',' + i + ', ' + j + ');"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '-'+ j + '.jpg" class="image-chapter-multi" alt="Chapter ' + i + ' Image-' + j + '"></a>';
           chapterHTML += '    <a href="img/Chapter-' + i + '/Chapter-' + i + '-' + j + '.jpg" data-fancybox="gallery" data-caption="' + bookData[i].captions[j - 1] + '"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '-' + j +
             '.jpg" class="image-chapter-multi" alt="Chapter ' + i + ' Image-' + j + '"></a>';
         }

@@ -1203,14 +1203,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
 }
 
-#chapters .chapters-item figure {
+/* #chapters .chapters-item figure {
   background: #000;
   overflow: hidden;
   height: 240px;
   position: relative;
   border-radius: 4px 4px 0 0;
   margin: 0;
-}
+} */
 
 #chapters .chapters-item figure:hover img {
   opacity: 0.4;
