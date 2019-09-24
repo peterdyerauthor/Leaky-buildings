@@ -1888,7 +1888,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   //align-items: stretch;
   //justify-items: center;
   width: 100%;
-  grid-gap: 45px;
+  //grid-gap: 60px;
   }
 .grid-multi {
   //display: block;
