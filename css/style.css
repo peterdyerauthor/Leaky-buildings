@@ -2024,3 +2024,15 @@ body.mobile-nav-active #mobile-nav-toggle {
       color-stop(0, rgb(10, 130, 66)),
       color-stop(1, rgb(6, 120, 60)));
 }
+#tedLogo {
+  width: auto;
+  height: 2em;
+  transition: 1s;
+  display: inline-block;
+}
+#tedLogo:hover {
+  width: auto;
+  height: 4em;
+  transition: 0.7s;
+  display: inline-block;
+}
