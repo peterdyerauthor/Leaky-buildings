@@ -13,17 +13,17 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/galleryCSS/bootstrap.min.css"> -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/galleryCSS/magnific-popup.css">
+  <!-- <link rel="stylesheet" href="css/galleryCSS/magnific-popup.css">
   <link rel="stylesheet" href="css/galleryCSS/jquery-ui.css">
   <link rel="stylesheet" href="css/galleryCSS/owl.carousel.min.css">
   <link rel="stylesheet" href="css/galleryCSS/owl.theme.default.min.css">
 
-  <link rel="stylesheet" href="css/galleryCSS/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/galleryCSS/bootstrap-datepicker.css"> -->
 
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
-  <link rel="stylesheet" href="css/galleryCSS/aos.css">
-  <link rel="stylesheet" href="css/galleryCSS/fancybox.css">
+  <!-- <link rel="stylesheet" href="css/galleryCSS/aos.css">
+  <link rel="stylesheet" href="css/galleryCSS/fancybox.css"> -->
 
   <link rel="stylesheet" href="css/galleryCSS/style.css">
   <link rel="stylesheet" href="css/galleryCSS/substitue-header.css">
@@ -68,29 +68,7 @@
       </div>
     </header><!-- #header -->
 
-    <!-- <header class="header-bar d-flex d-lg-block align-items-center">
-    <div class="site-logo" style="font: Montserrat;">
-      <a href="index.html">Rottenomics</a>
-    </div>
 
-    <div class="d-inline-block d-xl-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-    <div class="main-menu">
-      <ul class="js-clone-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#chapters">Chapters</a></li>
-        <li><a href="index.html#OtherDocs">Documents</a></li>
-        <li><a href="index.html#team">About the author</a></li>
-
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-      <ul class="social js-clone-nav">
-        <li><a href="#"><span class="icon-facebook"></span></a></li>
-        <li><a href="#"><span class="icon-twitter"></span></a></li>
-        <li><a href="#"><span class="icon-instagram"></span></a></li>
-      </ul>
-    </div>
-  </header> -->
     <main class="main-content">
       <div class="container-fluid photos">
 
@@ -136,118 +114,8 @@
     var galleryHTML = "";
 
     function whenPageLoaded() {
-      document.getElementById("galleryArea").innerHTML = img_gallery_tile();
+      document.getElementById("galleryArea").innerHTML = img_gallery_tile_flex("large");
     }
-
-    function img_gallery_tile() {
-      //console.log(items.length);
-      for (i = 0; i < items.length; i++) {
-        //console.log(items[i].src + ", " + items[i].msrc);
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">';
-        galleryHTML += '  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '   <div class="photo-text-more">';
-        galleryHTML += '       <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '      <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += '  </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">';
-        galleryHTML += '  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '    <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '      <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += '  </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">';
-        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '    <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '      <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += '  </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-8" data-aos="fade-up">';
-        galleryHTML += '  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '    <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '      <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += '  </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">';
-        galleryHTML += '  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '    <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '      <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += '  </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up">';
-        galleryHTML += '  <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '    <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '    <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '      <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += '  </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">';
-        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '   <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '     <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += '  </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">';
-        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '   <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '     <span class="icon icon-search"></span>';
-        galleryHTML += '   </div>';
-        galleryHTML += ' </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">';
-        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '   <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i++].title + '</h3>';
-        galleryHTML += '     <span class="icon icon-search"></span>';
-        galleryHTML += '   </div>';
-        galleryHTML += ' </a>';
-        galleryHTML += '</div>';
-        if (i == items.length) break;
-        galleryHTML += '<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">';
-        galleryHTML += ' <a href="' + items[i].src + '" class="d-block photo-item" data-fancybox="gallery" data-caption="' + items[i].title + '">';
-        galleryHTML += '   <img src="' + items[i].msrc + '" alt="Image" class="img-fluid">';
-        galleryHTML += '   <div class="photo-text-more">';
-        galleryHTML += '      <h3 class="heading">' + items[i].title + '</h3>';
-        galleryHTML += '     <span class="icon icon-search"></span>';
-        galleryHTML += '    </div>';
-        galleryHTML += ' </a>';
-        galleryHTML += '</div>';
-
-      }
-      return galleryHTML;
-    }
-
-
 
     $("[data-fancybox]").fancybox({
       playSpeed: 1000,

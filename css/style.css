@@ -1,33 +1,32 @@
 // transition:/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
+Theme Name: BizPage Theme URL: https: //bootstrapmade.com/bizpage-bootstrap-business-template/
+Author: BootstrapMade.com License: https: //bootstrapmade.com/license/
 */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
 body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
-// body {font-family: Arial, Helvetica, sans-serif;}
 
+// body {font-family: Arial, Helvetica, sans-serif;}
 .dollarClass::before {
-content: "$";
+  content: "$";
 }
+
 .percentClass::after {
-content: "%";
+  content: "%";
 }
+
 figure {
-display: block;
-margin-top: 1em;
-margin-bottom: 1em;
-text-align: center;
-align-items: center;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  align-items: center;
 }
 
 a {
@@ -61,7 +60,6 @@ h6 {
 }
 
 /* Back to top button */
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -78,6 +76,7 @@ h6 {
   transition: background 0.5s;
   z-index: 11;
 }
+
 .next-section-down {
   position: fixed;
   //display: none;
@@ -104,8 +103,8 @@ h6 {
   padding-top: 12px;
   color: #fff;
 }
-/* Prelaoder */
 
+/* Prelaoder */
 #preloader {
   position: fixed;
   top: 0;
@@ -158,7 +157,6 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
 #header {
   padding: 30px 0;
   height: 92px;
@@ -206,7 +204,6 @@ h6 {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
-
 #intro {
   display: table;
   width: 100%;
@@ -363,9 +360,7 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-
 /* Nav Menu Essentials */
-
 .nav-menu,
 .nav-menu * {
   margin: 0;
@@ -386,12 +381,12 @@ h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -405,7 +400,6 @@ h6 {
 }
 
 /* Nav Menu Arrows */
-
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
 }
@@ -424,15 +418,12 @@ h6 {
 }
 
 /* Nav Meu Container */
-
 #nav-menu-container {
   float: right;
   margin: 0px;
-
 }
 
 /* Nav Meu Styling */
-
 .nav-menu a {
   padding: 0 8px 10px 8px;
   text-decoration: none;
@@ -445,12 +436,12 @@ h6 {
   outline: none;
 }
 
-.nav-menu li:hover > a,
-.nav-menu > .menu-active > a {
+.nav-menu li:hover>a,
+.nav-menu>.menu-active>a {
   color: #098040;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 10px;
 }
 
@@ -474,7 +465,7 @@ h6 {
   text-transform: none;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   color: #098040;
 }
 
@@ -483,7 +474,6 @@ h6 {
 }
 
 /* Mobile Nav Toggle */
-
 #mobile-nav-toggle {
   position: fixed;
   right: 0;
@@ -504,7 +494,6 @@ h6 {
 }
 
 /* Mobile Nav Styling */
-
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -588,7 +577,6 @@ h6 {
 }
 
 /* Mobile Nav body classes */
-
 body.mobile-nav-active {
   overflow: hidden;
 }
@@ -604,10 +592,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-
 /* Sections Header
 --------------------------------*/
-
 .section-header h3 {
   font-size: 32px;
   color: #111;
@@ -649,14 +635,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Section with background
 --------------------------------*/
-
 .section-bg {
   background: #f7f7f7;
 }
 
 /* Featured Services Section
 --------------------------------*/
-
 #featured-services {
   background: #000;
 }
@@ -699,7 +683,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* About Us Section
 --------------------------------*/
-
 #about {
   background: url("../img/Mold-and-Mildew.jpg") center top no-repeat fixed;
   background-size: cover;
@@ -748,7 +731,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   text-align: center;
   border: 4px solid #fff;
-  left: calc( 50% - 32px);
+  left: calc(50% - 32px);
   bottom: -30px;
   transition: 0.3s;
 }
@@ -795,7 +778,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Services Section
 --------------------------------*/
-
 #services {
   background: #fff;
   background-size: cover;
@@ -841,7 +823,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Call To Action Section
 --------------------------------*/
-
 #call-to-action {
   background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
@@ -880,7 +861,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Call To Action Section
 --------------------------------*/
-
 #skills {
   padding: 60px 0;
 }
@@ -912,7 +892,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Facts Section
 --------------------------------*/
-
 #facts {
   background: url("../img/Mold-and-Mildew.jpg") center top no-repeat fixed;
   background-size: cover;
@@ -954,13 +933,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* OtherDocs Section
 --------------------------------*/
-
 #OtherDocs {
   background: url("../img/Mold-and-Mildew.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0;
   position: relative;
 }
+
 #OtherDocs::before {
   content: '';
   position: absolute;
@@ -971,6 +950,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(255, 255, 255, 0.78);
   z-index: 9;
 }
+
 #OtherDocs .container {
   position: relative;
   z-index: 10;
@@ -982,19 +962,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: auto;
   width: 100%;
   //border: 1px solid #d0d0d0;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3)
-  z-index: 2;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3) z-index: 2;
 }
+
 #OtherDocs .OtherDocs-img2 {
   text-align: center;
   padding: 5px;
   margin: auto;
   width: 70%;
   //border: 1px solid #d0d0d0;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3)
-  z-index: 2;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3) z-index: 2;
 }
-  #OtherDocs .OtherDocs-img:hover {opacity: 0.7;}
+
+#OtherDocs .OtherDocs-img:hover {
+  opacity: 0.7;
+}
+
 /* Portfolio Section
 --------------------------------*/
 /*
@@ -1147,10 +1130,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   text-transform: uppercase;
 } */
-
 /* Chapters Section
 --------------------------------*/
-
 #chapters {
   padding: 60px 0;
 }
@@ -1196,7 +1177,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* #chapters .chapters-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 } */
-
 #chapters .chapters-item {
   position: relative;
   height: 360px;
@@ -1211,12 +1191,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 4px 4px 0 0;
   margin: 0;
 } */
-
 /* #chapters .chapters-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
 } */
-
 #chapters .chapters-item figure .link-preview,
 #chapters .chapters-item figure .link-details {
   position: absolute;
@@ -1247,7 +1225,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #chapters .chapters-item figure .link-details:hover i {
   color: #fff;
 } */
-
 #chapters .chapters-item figure .link-preview {
   left: calc(50% - 38px);
   top: calc(50% - 18px);
@@ -1291,7 +1268,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* #chapters .chapters-item .chapters-info h4 a:hover {
   color: #098040;
 } */
-
 #chapters .chapters-item .chapters-info p {
   padding: 0;
   margin: 0;
@@ -1303,7 +1279,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* galleryLink Section
 --------------------------------*/
-
 #galleryLink {
   padding: 60px 0;
 }
@@ -1340,7 +1315,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Testimonials Section
 --------------------------------*/
-
 #testimonials {
   padding: 60px 0;
 }
@@ -1414,7 +1388,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Team Section
 --------------------------------*/
-
 #team {
   padding: 60px 0;
 }
@@ -1498,7 +1471,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Contact Section
 --------------------------------*/
-
 #contact {
   padding: 60px 0;
 }
@@ -1601,7 +1573,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 #footer {
   background: #000;
   padding: 0 0 30px 0;
@@ -1764,8 +1735,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
-
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1836,6 +1807,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 40%;
   padding-bottom: 5%;
 }
+
 .image-chapter-old {
   display: block;
   width: 100%;
@@ -1845,12 +1817,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-height: 260px;
   max-width: auto;
   //width:auto;
-  height:auto;
+  height: auto;
   background-image: url("../img/wood-frame-new.jpg");
   padding: 5%;
-
 }
-
 
 .image-chapter {
   width: auto;
@@ -1860,7 +1830,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 3%;
   background-image: url("../img/wood-frame-new.jpg");
 }
-.image-chapter:hover {opacity: .8;}
+
+.image-chapter:hover {
+  opacity: .8;
+}
 
 .image-chapter-multi {
   width: 130px;
@@ -1870,15 +1843,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 4%;
   background-image: url("../img/wood-frame-new.jpg");
 }
-.image-chapter-multi:hover {opacity: .8;}
+
+.image-chapter-multi:hover {
+  opacity: .8;
+}
 
 .frame {
-//max-width: 260px;
-//max-height: 260px;
-//height: auto;
-//border: 5px solid #c00;
-//background: #333;
-
+  //max-width: 260px;
+  //max-height: 260px;
+  //height: auto;
+  //border: 5px solid #c00;
+  //background: #333;
 }
 
 .chapter-grid {
@@ -1889,7 +1864,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   //justify-items: center;
   width: 100%;
   //grid-gap: 60px;
-  }
+}
+
 .grid-multi {
   //display: block;
   display: grid;
@@ -1899,18 +1875,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   grid-gap: 2px;
   //align-items: stretch;
   //justify-items: center;
-  }
+}
 
 .chapter-grid img {
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   //max-width: 100%;
   text-align: center;
 }
+
 .grid-multi img {
   //align-items: stretch;
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   //max-width: 100%;
   text-align: center;
 }
@@ -1922,6 +1899,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-image: linear-gradient(#333333, #000000);
   //z-index: 1;
 }
+
 #new-intro h2 {
   font-size: 20hv;
   font-weight: 700;
@@ -1934,6 +1912,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 #new-intro .btn-get-started {
   position: absolute;
   bottom: 2%;
@@ -1954,6 +1933,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   color: #098040;
 }
+
 #new-intro .intro-content {
   text-align: center;
   padding-top: 25vh;
@@ -1966,11 +1946,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-left: 3%;
   padding-right: 3%;
 }
+
 .paragraph-text {
-    position: relative;
-    padding-top: 4vh;
+  position: relative;
+  padding-top: 4vh;
   color: #fff;
 }
+
 .book-cover {
   height: 80vh;
   opacity: .5;
@@ -1980,67 +1962,65 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right: -50%;
   transform: translate(-50%, -45%);
 }
+
 .gallery-collage {
   opacity: 1;
 }
-.gallery-collage:hover {opacity: .8;}
+
+.gallery-collage:hover {
+  opacity: .8;
+}
 
 .announcement {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
+
 .announcement h4 {
   padding-left: 20px;
 }
+
 .announcement button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    background-color: #098040;
-    padding:12px 30px;
-    font-size: 20px;
-    border: 1px solid #0c8050;
-    background-image: linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(4,118,54) 0%, rgb(14,138,74) 100%);
-
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(4,118,54)),
-        color-stop(1, rgb(14,138,74))
-    );
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-shadow: -1px -1px 0px rgba(0,0,0,.4);
-
-    -webkit-box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-    -moz-box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-    box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-
-
-    /* -webkit-box-shadow: 0px 6px 0px #064a26, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #098040;
+  padding: 12px 30px;
+  font-size: 20px;
+  border: 1px solid #0c8050;
+  background-image: linear-gradient(bottom, rgb(4, 118, 54) 0%, rgb(14, 138, 74) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(4, 118, 54) 0%, rgb(14, 138, 74) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(4, 118, 54) 0%, rgb(14, 138, 74) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(4, 118, 54) 0%, rgb(14, 138, 74) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(4, 118, 54) 0%, rgb(14, 138, 74) 100%);
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(4, 118, 54)),
+      color-stop(1, rgb(14, 138, 74)));
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0, 0, 0, .4), inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px 0px 3px rgba(255, 255, 255, .5);
+  -moz-box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0, 0, 0, .4), inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px 0px 3px rgba(255, 255, 255, .5);
+  box-shadow: 0px 2px 0px #064a26, 0px 1px 6px rgba(0, 0, 0, .4), inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px 0px 3px rgba(255, 255, 255, .5);
+  /* -webkit-box-shadow: 0px 6px 0px #064a26, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
     -moz-box-shadow: 0px 6px 0px #064a26, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
     box-shadow: 0px 6px 0px #064a26, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5); */
 }
-.announcement button:active {
-    background-image: linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(10,130,66) 0%, rgb(6,120,60) 100%);
 
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(10,130,66)),
-        color-stop(1, rgb(6,120,60))
-    );
+.announcement button:active {
+  background-image: linear-gradient(bottom, rgb(10, 130, 66) 0%, rgb(6, 120, 60) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(10, 130, 66) 0%, rgb(6, 120, 60) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(10, 130, 66) 0%, rgb(6, 120, 60) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(10, 130, 66) 0%, rgb(6, 120, 60) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(10, 130, 66) 0%, rgb(6, 120, 60) 100%);
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(10, 130, 66)),
+      color-stop(1, rgb(6, 120, 60)));
 }
