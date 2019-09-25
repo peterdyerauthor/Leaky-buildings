@@ -65,9 +65,9 @@ var items = [
                title: '&quot;Far Horizons&quot;--NZ House & Garden, January 2004 Cover. This house, a leaky home, was eventually demolished.'
              },
             {
-               src: 'gallery1/resized-mould-in-housing-nz-apartment-wellington-copy.jpg',
-               msrc: 'gallery1/thumbnail-mould-in-housing-nz-apartment-wellington-copy.jpg',
-               title: 'Mould in Housing NZ apartment. Photo by Carol Morgan.'
+              src: 'gallery1/resized-wrongheaded-arsonist-s-jail-term-cut-for-setting-fire-to-leaky-home-dom-post-9-may-2014.jpg',
+              msrc: 'gallery1/thumbnail-wrongheaded-arsonist-s-jail-term-cut-for-setting-fire-to-leaky-home-dom-post-9-may-2014.jpg',
+              title: '&quot;Wrongheaded&quot; arsonist&apos;s jail term cut for setting fire to leaky home” - Dominion Post 9 May 2014'
              },
             {
                src: 'gallery1/resized-der-arme-poet-the-poor-poet-carl-spitzweg-1837-copy.jpg',
@@ -85,9 +85,9 @@ var items = [
                title: '“Make it monolithic” Progressive Building April/May 2002'
              },
             {
-               src: 'gallery1/resized-wrongheaded-arsonist-s-jail-term-cut-for-setting-fire-to-leaky-home-dom-post-9-may-2014.jpg',
-               msrc: 'gallery1/thumbnail-wrongheaded-arsonist-s-jail-term-cut-for-setting-fire-to-leaky-home-dom-post-9-may-2014.jpg',
-               title: '&quot;Wrongheaded&quot; arsonist&apos;s jail term cut for setting fire to leaky home” - Dominion Post 9 May 2014'
+              src: 'gallery1/resized-mould-in-housing-nz-apartment-wellington-copy.jpg',
+              msrc: 'gallery1/thumbnail-mould-in-housing-nz-apartment-wellington-copy.jpg',
+              title: 'Mould in Housing NZ apartment. Photo by Carol Morgan.'
              },
             {
                src: 'gallery1/resized-13-oct-nov-05-only-building-in-deserts.jpg',
