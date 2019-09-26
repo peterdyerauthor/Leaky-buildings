@@ -975,7 +975,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #OtherDocs .OtherDocs-img2 {
   text-align: center;
   //padding: 5px;
-  margin: auto; 
+  margin: auto;
   margin-bottom: 10px;
   width: 70%;
   //border: 1px solid #d0d0d0;
@@ -1810,13 +1810,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-.OtherDocs-img1 {
+/* .OtherDocs-img1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
   padding-bottom: 5%;
-}
+} */
 
 .image-chapter-old {
   display: block;
@@ -1838,6 +1838,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-height: 260px;
   //max-width: auto;
   padding: 3%;
+  //margin: auto;
   background-image: url("../img/wood-frame-new.jpg");
 }
 
@@ -1852,6 +1853,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 130px;
   padding: 4%;
   background-image: url("../img/wood-frame-new.jpg");
+  //margin: auto;
 }
 
 .image-chapter-multi:hover {
@@ -1868,7 +1870,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .chapter-grid {
   display: grid;
-  //margin: 0;
+  //margin: auto;
   grid-template-columns: 1fr;
   //align-items: stretch;
   //justify-items: center;
@@ -1879,7 +1881,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .grid-multi {
   //display: block;
   display: grid;
-  margin: 0;
+  //margin: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2px;
@@ -1892,6 +1894,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   text-align: center;
+  //margin: auto;
 }
 
 .grid-multi img {
@@ -1900,6 +1903,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   text-align: center;
+  //margin: auto;
 }
 
 #new-intro {
