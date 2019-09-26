@@ -244,10 +244,12 @@ function displayChapters() {
 
   var chapterHTML = "";
   for (i = 1; i < 21; i++) {
-    chapterHTML +=      '<div class="col-lg-3 col-sm-6 col-sm-1 chapter-item">';
-    chapterHTML += '  <div>';
-    chapterHTML += '      <h4 style="text-align: center;">Chapter ' + i + '</h4>';
+    chapterHTML +=      '<div class="col-lg-3 col-sm-6 col-sm-1 ">';
+    chapterHTML += '  <div class="chapter-text">';
+    chapterHTML += '      <h4>Chapter ' + i + '</h4>';
+    chapterHTML += '    <p style="text-align: center; "><i>' + bookData[i].title + '</i></p>';
     chapterHTML += '    <figure>';
+
     if (bookData[i].numberOfImages > 1) {
       chapterHTML += '    <div class="grid-multi">';
       for (j = 1; j <= bookData[i].numberOfImages; j++) {
