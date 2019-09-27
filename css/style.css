@@ -1875,6 +1875,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   //align-items: stretch;
   //justify-items: center;
   width: 100%;
+  //grid-auto-rows: minmax(1fr, auto);
   //grid-gap: 60px;
 }
 
@@ -1885,6 +1886,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2px;
+  //grid-auto-rows: minmax(1fr, auto);
   //align-items: stretch;
   //justify-items: center;
 }
