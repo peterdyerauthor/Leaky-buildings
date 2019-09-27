@@ -7,7 +7,7 @@ var items = [
             {
                src: 'gallery1/resized-john-hogg-letter-of-reference-from-wanganui-district-council-full-size-file.jpg',
                msrc: 'gallery1/thumbnail-john-hogg-letter-of-reference-from-wanganui-district-council-full-size-file.jpg',
-               title: 'John Hogg letter of reference from Wanganui District Council 30, January 2004'
+               title: 'John Hogg was a building inspector, then District Building Controller in Wanganui 1983 - 2001. Though for much of that time untreated radiata was approved for use in structural framing, Mr Hogg essentially disallowed it on his watch. This was despite stiff resistance from the local building industry. He thus substantially mitigated the effects of the leaky buildings disaster in Wanganui. The Wanganui District Council later wrote this letter of commendation'
              },
             {
                src: 'gallery1/resized-helen-tippett-stewart-mccutcheon-jim-bowler-progressive-building-img-2935.jpg',
@@ -54,15 +54,15 @@ var items = [
                msrc: 'gallery1/thumbnail-laserframe-advert-50-years-ago-you-have-our-word-on-it-progressive-building-magazine-june-july-2001-p-16-17-copy.jpg',
                title: 'Advert for Pinex (a subsidiary of Carter Holt Harvey) Laserframe untreated timber. “We’re proud of our product and you can be totally confident it will perform. You have our word on it.&quot;--Progressive Building Magazine--June-July 2001 p 16-17'
              },
+             {
+                src: 'gallery1/resized-1-far-horizons-nz-house-garden-january-2004-cover-copy.jpg',
+                msrc: 'gallery1/thumbnail-1-far-horizons-nz-house-garden-january-2004-cover-copy.jpg',
+                title: '&quot;Far Horizons&quot;--NZ House & Garden, January 2004 Cover. This house, a leaky home, was eventually demolished.'
+              },
             {
                src: 'gallery1/resized-2-far-horizons-nz-house-garden-january-2004-p-22.jpg',
                msrc: 'gallery1/thumbnail-2-far-horizons-nz-house-garden-january-2004-p-22.jpg',
                title: '&quot;Far Horizons&quot;--NZ House & Garden--January 2004 p 22'
-             },
-            {
-               src: 'gallery1/resized-1-far-horizons-nz-house-garden-january-2004-cover-copy.jpg',
-               msrc: 'gallery1/thumbnail-1-far-horizons-nz-house-garden-january-2004-cover-copy.jpg',
-               title: '&quot;Far Horizons&quot;--NZ House & Garden, January 2004 Cover. This house, a leaky home, was eventually demolished.'
              },
             {
               src: 'gallery1/resized-wrongheaded-arsonist-s-jail-term-cut-for-setting-fire-to-leaky-home-dom-post-9-may-2014.jpg',
