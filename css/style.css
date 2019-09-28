@@ -1667,7 +1667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1683,7 +1683,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-links ul li {
   border-bottom: 1px solid #333;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
@@ -1699,7 +1699,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #footer .footer-top .footer-contact p {
