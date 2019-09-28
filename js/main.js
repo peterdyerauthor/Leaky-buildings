@@ -246,11 +246,12 @@ function displayChapters() {
   for (i = 1; i < 21; i++) {
     chapterHTML +=      '<div class="col-lg-3 col-sm-6 col-sm-1 ">';
     chapterHTML += '  <div class="chapter-text">';
-    chapterHTML += '      <h4>Chapter ' + i + '</h4>';
-    chapterHTML += '    <p style="text-align: center; "><i>' + bookData[i].title + '</i></p>';
-    chapterHTML += '    <figure>';
+
 
     if (bookData[i].numberOfImages > 1) {
+      chapterHTML += '      <h4>Chapter ' + i + '</h4>';
+      chapterHTML += '    <p style="text-align: center; "><i>' + bookData[i].title + '</i></p>';
+      chapterHTML += '    <figure>';
       chapterHTML += '    <div class="grid-multi">';
       for (j = 1; j <= bookData[i].numberOfImages; j++) {
         chapterHTML += '    <a href="img/Chapter-' + i + '/Chapter-' + i + '-' + j + '.jpg" data-fancybox="gallery" data-caption="' + bookData[i].captions[j - 1] + '"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i + '-' + j +
@@ -258,6 +259,9 @@ function displayChapters() {
       }
       chapterHTML += '    </div>';
     } else {
+      chapterHTML += '      <h4>Chapter ' + i + '</h4>';
+      chapterHTML += '    <p style="text-align: center; "><i>' + bookData[i].title + '</i></p>';
+      chapterHTML += '    <figure>';
       chapterHTML += '    <div class="chapter-grid">';
       chapterHTML += '    <a href="img/Chapter-' + i + '/Chapter-' + i + '.jpg" data-fancybox="gallery" data-caption="' + bookData[i].captions[0] + '"> <img src="img/Chapter-' + i + '/thumbnail_Chapter-' + i +
         '.jpg" class="image-chapter" alt="Chapter ' + i + ' Image"></a>';
