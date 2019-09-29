@@ -2052,6 +2052,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.7s;
   display: inline-block;
 }
+.zoom-in {
+   width: 150px;
+   transition: 0.5s;
+}
+.zoom-in:hover{
+  width: 220px;
+  transition: 0.5s;
+  display: inline-block;
+}
 .fancybox-caption {
   text-align: center;
 }
