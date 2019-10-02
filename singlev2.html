@@ -136,26 +136,26 @@
 
   </div> <!-- .site-wrap -->
 
-  <script src="js/galleryJS/jquery-3.3.1.min.js"></script>
-  <script src="js/galleryJS/jquery-migrate-3.0.1.min.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="js/galleryJS/jquery-ui.js"></script>
-  <script src="js/galleryJS/popper.min.js"></script>
-  <script src="js/galleryJS/bootstrap.min.js"></script>
-  <script src="js/galleryJS/owl.carousel.min.js"></script>
-  <script src="js/galleryJS/jquery.stellar.min.js"></script>
-  <script src="js/galleryJS/jquery.countdown.min.js"></script>
-  <script src="js/galleryJS/jquery.magnific-popup.min.js"></script>
-  <script src="js/galleryJS/bootstrap-datepicker.min.js"></script>
+  <!-- <script src="js/galleryJS/popper.min.js"></script> -->
+  <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- <script src="js/galleryJS/jquery.stellar.min.js"></script> -->
+  <!-- <script src="js/galleryJS/jquery.countdown.min.js"></script> -->
+  <!-- <script src="js/galleryJS/jquery.magnific-popup.min.js"></script> -->
+  <!-- <script src="js/galleryJS/bootstrap-datepicker.min.js"></script> -->
   <script src="js/galleryJS/aos.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
+  <!-- <script src="lib/superfish/hoverIntent.js"></script> -->
   <script src="lib/superfish/superfish.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="js/galleryJS/jquery.fancybox.js"></script>
+  <script src="js/galleryJS/jquery.fancybox.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
-  <script src="js/galleryJS/main.js"></script>
+  <!-- <script src="js/galleryJS/main.js"></script> -->
   <script src="gallery-test/gallery-test.js"></script>
 
   <script>
@@ -168,13 +168,21 @@
       // document.getElementById("galleryArea").innerHTML = img_gallery_tile_flex("medium");
       calculate_image_rows(x, 270);
       document.getElementById("galleryArea").innerHTML = img_gallery_grid();
+      $("[data-fancybox]").fancybox({
+        buttons : [
+          'zoom',
+          'thumbs',
+          'slideShow',
+          'close'
+        ]
+      });
     }
-
+   /*
     $("[data-fancybox]").fancybox({
       playSpeed: 1000,
       autoPlay: true
     });
-    /*
+
       $("[data-fancybox]").fancybox({
       	buttons : [
       		'slideShow',
@@ -185,7 +193,7 @@
       });
     */
   </script>
-  <script src="js/gallery1.js"></script>
+  <!-- <script src="js/gallery1.js"></script> -->
   <script src="js/main.js"></script>
 <script>
 

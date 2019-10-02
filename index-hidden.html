@@ -407,11 +407,11 @@
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <!-- <script src="contactform/contactform.js"></script> -->
-  <script src="js/galleryJS/jquery.fancybox.js"></script>
+  <script src="js/galleryJS/jquery.fancybox.min.js"></script>
   <!-- Template Main Javascript File -->
   <script src="gallery-test/gallery-test.js"></script>
   <script src="js/main.js"></script>
@@ -427,6 +427,14 @@ $(document).ready(function() {
 */
   function whenPageLoaded() {
     document.getElementById("testDiv").innerHTML = displayChapters();
+    $("[data-fancybox]").fancybox({
+      buttons : [
+        'zoom',
+        'thumbs',
+        'slideShow',
+        'close'
+      ]
+    });
   }
   var bookData = {
     1: {
@@ -550,6 +558,8 @@ $(document).ready(function() {
     }
 
   });
+
+
 </script>
 
 </html>
