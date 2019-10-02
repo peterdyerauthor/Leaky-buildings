@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rottenomics Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/galleryCSS/fancybox.min.css">
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/galleryCSS/bootstrap.min.css"> -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/galleryCSS/magnific-popup.css">
+  <link rel="stylesheet" href="css/galleryCSS/jquery-ui.css">
+  <link rel="stylesheet" href="css/galleryCSS/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/galleryCSS/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/galleryCSS/bootstrap-datepicker.css"> -->
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <!-- <link rel="stylesheet" href="css/galleryCSS/aos.css">
+  <link rel="stylesheet" href="css/galleryCSS/fancybox.css"> -->
+
+  <link rel="stylesheet" href="css/galleryCSS/style.css">
+  <link rel="stylesheet" href="css/galleryCSS/substitue-header.css">
+
+  <style>
+
+#galleryArea {
+  //position: relative;
+  //margin: auto;
+  margin-top: 92px; // 92px
+
+/* bring your own prefixes */
+}
+.galleryRow {
+    margin-left: 5vw;
+  //display: inline-block;
+  //overflow: hidden;
+  //left: 0;
+  //position: absolute;
+  //top: 0;
+  //padding: 20px;
+  //object-fit: cover;
+}
+.galleryRowItem {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  //top: 0;
+  //position: inherit;
+}
+.galleryRowItem img {
+  max-width: 100%;
+  height: auto;
+}
+
+.galleryWrapper {
+  display: grid;
+  grid-template-coloums: minmax(0, auto);
+  grid-template-rows: 13
+}
+
+.main-content .photos .photo-item img {
+  margin-bottom: 0px;
+}
+  </style>
+</head>
+
+<body onload="whenPageLoaded()">
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header">
+      <div class="container-fluid">
+
+        <div id="logo" class="pull-left">
+          <h1><a href="index.html#new-intro" class="scrollto">Rottenomics Gallery</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="index-hidden.html#new-intro">Home</a></li>
+            <li><a href="index-hidden.html#chapters">Chapter Images</a></li>
+            <li><a href="index-hidden.html#OtherDocs">Documents</a></li>
+            <li><a href="index-hidden.html#galleryLink">Image Gallery</a></li>
+            <li><a href="index-hidden.html#team">About the author</a></li>
+            <li><a href="index-hidden.html#contact">Contact</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </header><!-- #header -->
+
+
+    <main class="main-content">
+      <!-- <div class="container-fluid photos"> -->
+
+<!--         <div class="row" id="galleryArea" style="padding: 8px;">
+
+</div> -->
+
+        <div class="photos" id="galleryArea" >
+
+        </div>
+
+        <!-- <div class="row justify-content-center">
+        <div class="col-md-12 text-center py-5">
+          <p>
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+      </p>
+        </div>
+      </div> -->
+    <!--   </div> -->
+  <!--   </main> -->
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/galleryJS/jquery-3.3.1.min.js"></script>
+  <script src="js/galleryJS/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/galleryJS/jquery-ui.js"></script>
+  <script src="js/galleryJS/popper.min.js"></script>
+  <script src="js/galleryJS/bootstrap.min.js"></script>
+  <script src="js/galleryJS/owl.carousel.min.js"></script>
+  <script src="js/galleryJS/jquery.stellar.min.js"></script>
+  <script src="js/galleryJS/jquery.countdown.min.js"></script>
+  <script src="js/galleryJS/jquery.magnific-popup.min.js"></script>
+  <script src="js/galleryJS/bootstrap-datepicker.min.js"></script>
+  <script src="js/galleryJS/aos.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="js/galleryJS/jquery.fancybox.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="js/galleryJS/main.js"></script>
+  <script src="gallery-test/gallery-test.js"></script>
+
+  <script>
+    var galleryHTML = "";
+
+    function whenPageLoaded() {
+      var x = window.innerWidth;
+      x=x-(window.innerWidth/10);
+      //console.log(window.innerWidth+", "+ x);
+      // document.getElementById("galleryArea").innerHTML = img_gallery_tile_flex("medium");
+      calculate_image_rows(x, 270);
+      document.getElementById("galleryArea").innerHTML = img_gallery_grid();
+    }
+
+    $("[data-fancybox]").fancybox({
+      playSpeed: 1000,
+      autoPlay: true
+    });
+    /*
+      $("[data-fancybox]").fancybox({
+      	buttons : [
+      		'slideShow',
+      		'fullScreen',
+      		'thumbs',
+      		'close'
+      	]
+      });
+    */
+  </script>
+  <script src="js/gallery1.js"></script>
+  <script src="js/main.js"></script>
+<script>
+
+
+</script>
+</body>
+
+
+</html>
