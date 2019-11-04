@@ -255,6 +255,7 @@
     autoplay: true,
     dots: true,
     loop: true,
+    autoplayTimeout: 8500,
     items: 1
   });
 
